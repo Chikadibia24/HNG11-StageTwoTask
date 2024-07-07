@@ -8,7 +8,7 @@
 const CheckOutNavBar = ({className,logoIcon,iconFavorite,cartIcon,downArrow,paraClassName}) => {
   return (
     <div
-      className={`flex items-center justify-between sticky top-0 px-[20px] w-[100%] h-[60px] ${className}`}
+      className={`flex items-center justify-between sticky top-0 z-10 px-[20px] w-[100%] h-[60px] ${className}`}
     >
       <div className="flex items-center gap-[8px]">
         <img src={logoIcon} alt="logo" className="hover:cursor-pointer" />

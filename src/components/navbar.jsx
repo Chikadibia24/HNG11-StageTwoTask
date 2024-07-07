@@ -4,7 +4,7 @@ import flagNigeria from "../assets/flagNigeria.svg"
 
 const NavBar = () => {
   return (
-    <nav className="nav flex items-center justify-center w-[100%] bg-[#606060] h-[50px] pl-[30px] pr-[30px] sticky top-0">
+    <nav className="nav flex items-center justify-center w-[100%] bg-[#606060] h-[50px] pl-[30px] pr-[30px] sticky top-0 z-10">
       <div className="nav-sub-container w-[94%] flex items-center justify-between h-[50px]">
         <div className="nav-contact flex items-center justify-center gap-[8px]w-[197px] h-[50px]">
           <img
