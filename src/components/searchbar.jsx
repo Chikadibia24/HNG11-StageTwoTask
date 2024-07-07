@@ -1,3 +1,4 @@
+import "/src/App.css"
 import logo from "../assets/logo.svg";
 import searchIcon from "../assets/searchIcon.svg";
 import iconCancel from "../assets/iconCancel.svg";

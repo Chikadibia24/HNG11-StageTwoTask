@@ -72,7 +72,7 @@ const ProductData = () => {
     setTimeout(() => {
       setProducts(productsArray);
       setLoading(false);
-    }, 2000);
+    }, 1000);
     console.log(productsArray)
 
   })
@@ -83,7 +83,7 @@ const ProductData = () => {
   return (
     <div className="">
       {loading ? (
-        <div className="text-[20px]">loading...</div>
+        <div className="text-[25px] text-[#404040]">Loading...</div>
       ) : (
         <div className="flex flex-wrap  items-center justify-center gap-[15px] w-[100%]">
           <GetProductData productsData={products} />

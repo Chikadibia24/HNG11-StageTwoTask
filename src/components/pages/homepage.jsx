@@ -16,14 +16,19 @@ const HomePage = () => {
     );
   }
 
-  const FilterBar = ({text,image}) => {
+  const FilterBar = ({image,type,name,id,placeholder,className}) => {
     return (
-      <button className="flex items-center justify-center p-[8px] gap-[8px] h-[34px] rounded-[4px] text-[#404040] text-[18px] border border-[#a9aaab]">
-        <span>{text}</span>
-        <span>
-          <img src={image} alt={image} />
-        </span>
-      </button>
+      <div className="flex items-center justify-center pl-[1px] pr-[5px] gap-[2px] h-[fit-content] rounded-[4px] border border-[#a9aaab] w-[max-content]">
+        {/* <span>{text}</span> */}
+        <input
+          type={type}
+          name={name}
+          id={id}
+          placeholder={placeholder}
+          className={`flex items-center text-[#404040] text-[16px] pl-[3px] py-[3px] ${className}`}
+        />
+        <img src={image} alt={image} className="hover:cursor-pointer" />
+      </div>
     );
   }
 
@@ -37,14 +42,70 @@ const HomePage = () => {
 
         <div className="flex items-center justify-center gap-[15px]">
           <FilterIcon />
-          <FilterBar text={"Category"} image={arrowDownGray} />
-          <FilterBar text={"Brand"} image={arrowDownGray} />
-          <FilterBar text={"Features"} image={arrowDownGray} />
-          <FilterBar text={"Color"} image={arrowDownGray} />
-          <FilterBar text={"Inches"} image={arrowDownGray} />
-          <FilterBar text={"Price"} image={arrowDownGray} />
-          <FilterBar text={"Release Date"} image={arrowDownGray} />
-          <FilterBar text={"Discount and Deals"} image={arrowDownGray} />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"category"}
+            id={"category"}
+            placeholder={"Category"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"brand"}
+            id={"brand"}
+            placeholder={"Brand"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"features"}
+            id={"features"}
+            placeholder={"Features"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"color"}
+            id={"color"}
+            placeholder={"Color"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"inches"}
+            id={"inches"}
+            placeholder={"Inches"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"price"}
+            id={"price"}
+            placeholder={"Price"}
+            className={"w-[100px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"date"}
+            id={"date"}
+            placeholder={"Release Date"}
+            className={"w-[110px]"}
+          />
+          <FilterBar
+            image={arrowDownGray}
+            type={"text"}
+            name={"discount-and-deals"}
+            id={"discount-and-deals"}
+            placeholder={"Discount and Deals"}
+            className={"w-[150px]"}
+          />
         </div>
       </div>
 
