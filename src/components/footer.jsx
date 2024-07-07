@@ -8,7 +8,7 @@ import logo from "../assets/logo.svg"
 const Footer = () => {
   const BlackCircle = ({ image, altText }) => {
     return (
-      <div className="flex items-center justify-center bg-[#000] text-white w-[44px] h-[44px] rounded-full">
+      <div className="flex items-center justify-center bg-[#000] text-white w-[44px] h-[44px] rounded-full hover:cursor-pointer">
         <img src={image} alt={altText} />
       </div>
     );
