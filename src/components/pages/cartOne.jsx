@@ -12,7 +12,7 @@ import infoIcon from "/src/assets/infoIcon.svg";
 const CartOne = () => {
   const Cart = () => {
     return (
-      <div className="flex flex-col gap-[8px] w-[90%]">
+      <div className="flex flex-col gap-[8px] w-[85%]">
         <div className="cart-sub-container-1">
           <h1 className="text-[30px]">Cart</h1>
         </div>
@@ -76,8 +76,8 @@ const CartOne = () => {
               <p className="text-[#404040] text-[16px]">(20%) -NGN 20,000</p>
             </div>
 
-            <div className="flex items-center justify-between text-[16px] w-[100%]">
-              <p className="flex items-center text-[#393939] text-[14px]">
+            <div className="vat-container flex items-center justify-between text-[16px] w-[100%]">
+              <p className="flex items-center text-[#393939] text-[14px] gap-[3px]">
                 <span>VAT</span>
                 <span>
                   <img src={infoIcon} alt="infoIcon" />
@@ -87,7 +87,7 @@ const CartOne = () => {
               <p className="text-[#404040] text-[16px]">+NGN 7,000</p>
             </div>
 
-            <div className="flex items-center justify-between w-[100%] text-[20px]">
+            <div className="total-container flex items-center justify-between w-[100%] text-[20px]">
               <p className="text-[#393939]">Total</p>
               <p>NGN 87,000</p>
             </div>

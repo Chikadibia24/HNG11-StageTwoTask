@@ -43,7 +43,7 @@ const SearchBar = () => {
         </div>
       </div>
 
-      <div className="flex gap-[15px]">
+      <div className="favorite-container flex gap-[15px]">
         <div className="flex items-center gap-[6px]">
           <img
             src={favoriteIcon}

@@ -35,3 +35,8 @@ input:focus-visible {
     /* outline: 1px solid #a9aaab; */
     /* border: 1px solid #f913f9; */
 }
+
+.total-container{
+  border-top: 1px dashed #404040;
+  padding-top: 8px;
+}
