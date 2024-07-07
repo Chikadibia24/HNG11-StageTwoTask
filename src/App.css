@@ -40,3 +40,10 @@ input:focus-visible {
   border-top: 1px dashed #404040;
   padding-top: 8px;
 }
+
+.payment-shipment-sub-container{
+  border-top: 1px dashed #404040;
+  border-bottom: 1px dashed #404040;padding-top: 8px;
+  padding-bottom: 8px;
+}
+

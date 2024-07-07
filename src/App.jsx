@@ -3,8 +3,8 @@ import './App.css'
 // import NavBar from "../src/components/navbar";
 // import Footer from "../src/components/footer";
 // import CartOne from "../src/components/pages/cartOne";
-import CheckOutOne from "../src/components/pages/checkOutOne";
-// import CheckOutTwo from "../src/components/pages/checkOutTwo";
+// import CheckOutOne from "../src/components/pages/checkOutOne";
+import CheckOutTwo from "../src/components/pages/checkOutTwo";
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
     <div>
       {/* <HomePage/> */}
       {/* <CartOne/> */}
-      <CheckOutOne />
-      {/* <CheckOutTwo/> */}
+      {/* <CheckOutOne /> */}
+      <CheckOutTwo/>
       {/* <NavBar />
       <Footer/> */}
     </div>
