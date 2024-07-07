@@ -11,7 +11,7 @@ const HomePage = () => {
   const FilterIcon = () => {
     return (
       <div className="filterIcon-container flex items-center justify-center w-[34px] h-[34px] rounded-full">
-        <img src={filterIcon} alt="filterIcon" />
+        <img src={filterIcon} alt="filterIcon"/>
       </div>
     );
   }
@@ -48,7 +48,7 @@ const HomePage = () => {
             name={"category"}
             id={"category"}
             placeholder={"Category"}
-            className={"w-[100px]"}
+            className={"w-[75px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -56,7 +56,7 @@ const HomePage = () => {
             name={"brand"}
             id={"brand"}
             placeholder={"Brand"}
-            className={"w-[100px]"}
+            className={"w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -64,7 +64,7 @@ const HomePage = () => {
             name={"features"}
             id={"features"}
             placeholder={"Features"}
-            className={"w-[100px]"}
+            className={"w-[73px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -72,7 +72,7 @@ const HomePage = () => {
             name={"color"}
             id={"color"}
             placeholder={"Color"}
-            className={"w-[100px]"}
+            className={"w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -80,7 +80,7 @@ const HomePage = () => {
             name={"inches"}
             id={"inches"}
             placeholder={"Inches"}
-            className={"w-[100px]"}
+            className={"w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -88,7 +88,7 @@ const HomePage = () => {
             name={"price"}
             id={"price"}
             placeholder={"Price"}
-            className={"w-[100px]"}
+            className={"w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
