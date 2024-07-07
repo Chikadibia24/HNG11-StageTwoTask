@@ -4,6 +4,8 @@ import './App.css'
 // import Footer from "../src/components/footer";
 // import CartOne from "../src/components/pages/cartOne";
 import CheckOutOne from "../src/components/pages/checkOutOne";
+// import CheckOutTwo from "../src/components/pages/checkOutTwo";
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
       {/* <HomePage/> */}
       {/* <CartOne/> */}
       <CheckOutOne />
+      {/* <CheckOutTwo/> */}
       {/* <NavBar />
       <Footer/> */}
     </div>

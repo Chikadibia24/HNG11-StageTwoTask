@@ -130,7 +130,7 @@ const PaymentForm = () => {
 
 
   return (
-    <form className="flex flex-col gap-[20px] w-[100%]">
+    <form className="flex flex-col gap-[20px] pb-[130px] w-[100%]">
       <Headings
         h1Text={"Your details"}
         paraText={"Farchika54@gmail.com"}

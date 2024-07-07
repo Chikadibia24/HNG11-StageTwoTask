@@ -5,6 +5,7 @@ import shoppingCartWhite from "/src/assets/shoppingCartWhite.svg";
 import arrowDownWhite from "/src/assets/arrowDownWhite.svg";
 import PaymentForm from "../paymentForm";
 import CheckOutOnePriceDetails from "../checkOutOnePriceDetails";
+import Footer from "../footer";
 
 
 
@@ -28,6 +29,10 @@ const CheckOutOne = () => {
         <div className="w-[45%] p-[30px]">
           <CheckOutOnePriceDetails />
         </div>
+      </div>
+
+      <div className="w-[100%] flex flex-col items-center">
+        <Footer />
       </div>
     </div>
   );
