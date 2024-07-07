@@ -52,14 +52,14 @@ const SearchBar = () => {
           <p className="text-[#404040] text-[18px]">Favorites</p>
         </div>
 
-        <div className="flex items-center gap-[6px]">
+        <button className="flex items-center gap-[6px]">
           <img
             src={shoppingCart}
             alt="shoppingCart"
             className="hover:cursor-pointer"
           />
           <p className="text-[#404040] text-[18px]">Cart</p>
-        </div>
+        </button>
 
         <div className="flex items-center gap-[6px]">
           <p className="text-[#404040] text-[18px]">Chika</p>
