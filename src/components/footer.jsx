@@ -13,33 +13,33 @@ const Footer = () => {
       </div>
     );
   };
-
-  // const FooterText = () => {
-  //   return (
-  //     <div className="flex flex-col gap-[15px] text-white">
-  //     </div>
-  //   );
-  // };
+  
 
   const HeadingText = ({h1Text}) => {
-      return <h1 className="text-[18px]">{h1Text}</h1>;
+      return <h1 className="text-[20px]">{h1Text}</h1>;
   }
   
 
   const Paragraph = ({paraText}) => {
-      return <p className="text-white text-[14px]">{paraText}</p>;
+    return (
+      <a href="#" className="footer-links">
+        <p className="text-white text-[15px]">{paraText}</p>
+      </a>
+    );
     }
 
   return (
     <footer className="footer flex flex-col gap-[32px] justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
       <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
         <div className="flex items-center gap-[8px]">
-          <img src={logo} alt="logo" />
-          <p className="text-black text-[24px]">Danchika Electronics</p>
+          <img src={logo} alt="logo" className="hover:cursor-pointer" />
+          <p className="text-black text-[24px] hover:cursor-pointer">
+            Danchika Electronics
+          </p>
         </div>
 
         <div className="flex justify-around w-[60%] gap-[15px] bg-[#606060] text-white pt-[20px] pb-[20px] rounded-[32px]">
-          <div>
+          <div className="flex flex-col gap-[15px] text-white">
             <HeadingText h1Text={"Account"} />
             <Paragraph paraText={"Wishlist"} />
             <Paragraph paraText={"Cart"} />
