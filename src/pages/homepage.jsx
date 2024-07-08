@@ -21,7 +21,7 @@ const HomePage = () => {
 
   const FilterIcon = () => {
     return (
-      <div className="filterIcon-container flex items-center justify-center w-[34px] h-[34px] rounded-full">
+      <div className="filterIcon-container flex items-center justify-center sm:w-[30px] sm:h-[30px] lg:w-[34px] lg:h-[34px] rounded-full">
         <img src={filterIcon} alt="filterIcon" />
       </div>
     );
@@ -29,14 +29,14 @@ const HomePage = () => {
 
   const FilterBar = ({ image, type, name, id, placeholder, className }) => {
     return (
-      <div className="flex items-center justify-center pl-[1px] pr-[5px] gap-[2px] h-[fit-content] rounded-[4px] border border-[#a9aaab] w-[max-content]">
+      <div className="flex items-center justify-center pl-[1px] sm:pr-[3px] lg:pr-[5px] gap-[2px] h-[fit-content] rounded-[4px] border border-[#a9aaab] w-[max-content]">
         {/* <span>{text}</span> */}
         <input
           type={type}
           name={name}
           id={id}
           placeholder={placeholder}
-          className={`flex items-center text-[#404040] text-[16px] pl-[3px] py-[3px] ${className}`}
+          className={`flex items-center text-[#404040] sm:text-[14px] lg:text-[16px] pl-[3px] py-[3px] ${className}`}
         />
         <img src={image} alt={image} className="hover:cursor-pointer" />
       </div>
@@ -48,9 +48,9 @@ const HomePage = () => {
       <div className="flex flex-col items-center gap-[30px] w-[100%]">
         <NavBar />
 
-        <SearchBar onClickCart={goToCart}/>
+        <SearchBar onClickCart={goToCart} />
 
-        <div className="flex items-center justify-center gap-[15px]">
+        <div className="flex sm:flex-col md:flex-row items-center justify-center sm:gap-[10px] md:gap-[10px] lg:gap-[15px]">
           <FilterIcon />
           <FilterBar
             image={arrowDownGray}
@@ -58,7 +58,7 @@ const HomePage = () => {
             name={"category"}
             id={"category"}
             placeholder={"Category"}
-            className={"w-[75px]"}
+            className={"sm:w-[63px] lg:w-[75px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -66,7 +66,7 @@ const HomePage = () => {
             name={"brand"}
             id={"brand"}
             placeholder={"Brand"}
-            className={"w-[60px]"}
+            className={"sm:w-[43px] lg:w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -74,7 +74,7 @@ const HomePage = () => {
             name={"features"}
             id={"features"}
             placeholder={"Features"}
-            className={"w-[73px]"}
+            className={"sm:w-[60px] lg:w-[73px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -82,7 +82,7 @@ const HomePage = () => {
             name={"color"}
             id={"color"}
             placeholder={"Color"}
-            className={"w-[60px]"}
+            className={"sm:w-[39px] lg:w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -90,7 +90,7 @@ const HomePage = () => {
             name={"inches"}
             id={"inches"}
             placeholder={"Inches"}
-            className={"w-[60px]"}
+            className={"sm:w-[46px] lg:w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -98,15 +98,15 @@ const HomePage = () => {
             name={"price"}
             id={"price"}
             placeholder={"Price"}
-            className={"w-[60px]"}
+            className={"sm:w-[38px] lg:w-[60px]"}
           />
           <FilterBar
             image={arrowDownGray}
-            type={"text"}
+            type={"date"}
             name={"date"}
             id={"date"}
             placeholder={"Release Date"}
-            className={"w-[110px]"}
+            className={"sm:w-[127px] lg:w-[143px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -114,7 +114,7 @@ const HomePage = () => {
             name={"discount-and-deals"}
             id={"discount-and-deals"}
             placeholder={"Discount and Deals"}
-            className={"w-[150px]"}
+            className={"sm:w-[126px] lg:w-[150px]"}
           />
         </div>
       </div>
