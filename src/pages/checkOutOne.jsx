@@ -30,11 +30,11 @@ const CheckOutOne = () => {
       />
 
       <div className="flex w-[100%]">
-        <div className="w-[55%] border-r border-r-[#a9aaab] p-[30px]">
+        <div className="md:w-[62%] lg:w-[55%] border-r border-r-[#a9aaab] md:px-[20px] md:pt-[30px] lg:p-[30px]">
           <PaymentForm onClick={goToCheckoutTwo} />
         </div>
 
-        <div className="w-[45%] p-[30px]">
+        <div className=" md:w-[38%] lg:w-[45%] md:px-[20px] md:pt-[30px] lg:p-[30px]">
           <CheckOutOnePriceDetails />
         </div>
       </div>

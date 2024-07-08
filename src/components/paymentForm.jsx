@@ -12,9 +12,9 @@ const PaymentForm = ({onClick}) => {
   const Headings = ({h1Text,paraText,divClassName}) => {
     return (
       <div className={`${divClassName} flex flex-col w-[100%]`}>
-        <h1 className="mb-[-5px]  text-black text-[24px]">{h1Text}</h1>
+        <h1 className="mb-[-5px]  text-black md:text-[20px] lg:text-[24px]">{h1Text}</h1>
         <a href="#">
-          <p className="text-[#404040] text-[18px]">{paraText}</p>
+          <p className="text-[#404040] md:text-[14px] lg:text-[18px]">{paraText}</p>
         </a>
       </div>
     );
@@ -23,7 +23,7 @@ const PaymentForm = ({onClick}) => {
   const Inputs = ({label,type, id, name, placeholder, divInputClass, inputClassName, imageClassName,icon}) => {
     return (
       <div className="flex flex-col justify-center w-[100%]">
-        <label htmlFor={id} className="text-[18px] text-[#404040]">
+        <label htmlFor={id} className="md:text-[14px] lg:text-[18px] text-[#404040]">
           {label}
         </label>
 
@@ -36,9 +36,9 @@ const PaymentForm = ({onClick}) => {
             id={id}
             name={name}
             placeholder={placeholder}
-            className={`${inputClassName} py-[3px] px-[10px]`}
+            className={`${inputClassName} py-[3px] md:px-[6px] lg:px-[10px]`}
           />
-          <img src={icon} alt={icon} className={`${imageClassName} pr-[10px] hover:cursor-pointer`} />
+          <img src={icon} alt={icon} className={`${imageClassName} md:w-[16px] lg:w-[initial] md:pr-[6px] lg:pr-[10px] hover:cursor-pointer`} />
         </div>
       </div>
     );
@@ -55,18 +55,18 @@ const PaymentForm = ({onClick}) => {
   }) => {
     return (
       <div
-        className={`shippingMethods flex items-center justify-between py-[8px] px-[20px] rounded-[4px] ${shippingMethodsClassName}`}
+        className={`shippingMethods flex items-center justify-between md:py-[6px] lg:py-[8px] md:px-[10px] lg:px-[20px] rounded-[4px] ${shippingMethodsClassName}`}
       >
         <div className="flex items-center gap-[10px]">
           <div
-            className={`flex items-center justify-center w-[50px] h-[50px] rounded-full ${iconDivClassName}`}
+            className={`flex items-center justify-center md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] rounded-full ${iconDivClassName}`}
           >
             <img src={icon} alt={icon} />
           </div>
 
           <div>
-            <h1 className="text-black text-[20px]">{h1Text}</h1>
-            <p className="text-[#404040] text-[16px]">{paraText}</p>
+            <h1 className="text-black md:text-[17px] lg:text-[20px]">{h1Text}</h1>
+            <p className="text-[#404040] md:text-[13px] lg:text-[16px]">{paraText}</p>
           </div>
         </div>
 
@@ -93,11 +93,11 @@ const PaymentForm = ({onClick}) => {
           <img src={icon} alt={icon} />
         </span>
 
-        <span className="text-[16px] text-[#404040]">{text}</span>
+        <span className="md:text-[14px] lg:text-[16px] text-[#404040]">{text}</span>
         <div
-          className={`flex items-center justify-center h-[20px] w-[20px] rounded-full bg-black ${topIconClassName}`}
+          className={`flex items-center justify-center md:h-[18px] md:w-[18px] lg:h-[20px] lg:w-[20px] rounded-full bg-black ${topIconClassName}`}
         >
-          <img src={topIcon} alt={topIcon} />
+          <img src={topIcon} alt={topIcon} className="md:w-[13px] lg:w-[initial]"/>
         </div>
       </button>
     );
@@ -113,7 +113,7 @@ const PaymentForm = ({onClick}) => {
           value="my-details"
           className="accent-[#000000]"
         />
-        <p className="text-black text-[18px]">
+        <p className="text-black md:text-[15px] lg:text-[18px]">
           Save my details for future purchases
         </p>
       </div>
@@ -122,7 +122,7 @@ const PaymentForm = ({onClick}) => {
 
   const SubmitButton = () => {
     return (
-      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[10px] px-[10px] text-white text-[16px] rounded-[4px] w-[80%]">
+      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[10px] px-[10px] text-white text-[16px] rounded-[4px] md:w-[100%] lg:w-[80%]">
         Proceed to checkout
       </button>
     );
@@ -237,7 +237,7 @@ const PaymentForm = ({onClick}) => {
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[190px] border border-[#a9aaab]"
+              "absolute z-0 md:left-[175px] lg:left-[190px] border border-[#a9aaab]"
             }
             icon={bankIcon}
             text={"Bank transfer"}
@@ -246,7 +246,7 @@ const PaymentForm = ({onClick}) => {
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[365px] border border-[#a9aaab]"
+              "absolute z-0 md:left-[330px] lg:left-[365px] border border-[#a9aaab]"
             }
             icon={googlePayIcon}
             text={"Google pay"}
@@ -299,11 +299,11 @@ const PaymentForm = ({onClick}) => {
         </div>
 
         <div className="checkbox-container w-[100%]">
-          <CheckBox/>
+          <CheckBox />
         </div>
       </div>
 
-      <SubmitButton/>
+      <SubmitButton />
     </form>
   );
 }
