@@ -106,7 +106,7 @@ const HomePage = () => {
             name={"date"}
             id={"date"}
             placeholder={"Release Date"}
-            className={"sm:w-[125px] lg:w-[143px]"}
+            className={"sm:w-[130px] lg:w-[150px]"}
           />
           <FilterBar
             image={arrowDownGray}
