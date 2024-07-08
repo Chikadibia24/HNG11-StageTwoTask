@@ -32,7 +32,7 @@ const Footer = () => {
   const Paragraph = ({paraText}) => {
     return (
       <a href="#" className="footer-links">
-        <p className="text-white text-[15px]">{paraText}</p>
+        <p className="text-white text-[16px]">{paraText}</p>
       </a>
     );
     }
@@ -40,39 +40,54 @@ const Footer = () => {
   return (
     <footer className="footer flex flex-col gap-[32px] justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
       <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
-        <button onClick={goToHomePage} className="flex items-center gap-[8px]">
-          <img src={logo} alt="logo" className="hover:cursor-pointer" />
-          <p className="text-black text-[24px] hover:cursor-pointer">
-            Danchika Electronics
-          </p>
+        <button
+          onClick={goToHomePage}
+          className="flex items-center md:gap-[6px] lg:gap-[8px]"
+        >
+          <img src={logo} alt="logo" className="md:w-[40px] lg:w-[45px]" />
+          <div className="flex flex-col items-start">
+            <p className="text-black md:text-[20px] lg:text-[24px] mb-[-5px]">
+              Danchika
+            </p>
+
+            <p className="text-black md:text-[20px] lg:text-[24px] mt-[-5px]">
+              Electronics
+            </p>
+          </div>
         </button>
 
-        <div className="flex justify-around w-[60%] gap-[15px] bg-[#606060] text-white pt-[20px] pb-[20px] rounded-[32px]">
-          <div className="flex flex-col gap-[15px] text-white">
+        <div className="flex md:flex-col lg:flex-row lg:justify-around md:w-[74%] lg:w-[65%] gap-[15px] bg-[#606060] text-white pt-[20px] pb-[20px] rounded-[32px]">
+          <div className="flex flex-col gap-[8px] text-white md:pl-[20px] lg:pl-[0px]">
             <HeadingText h1Text={"Account"} />
-            <Paragraph paraText={"Wishlist"} />
-            <Paragraph paraText={"Cart"} />
-            <Paragraph paraText={"Track Order"} />
-            <Paragraph paraText={"Shopping Details"} />
+            <div className="flex md:flex-row lg:flex-col md:gap-[10px] lg:gap-[15px]">
+              <Paragraph paraText={"Wishlist"} />
+              <Paragraph paraText={"Cart"} />
+              <Paragraph paraText={"Track Order"} />
+              <Paragraph paraText={"Shopping Details"} />
+            </div>
           </div>
 
-          <div className="flex flex-col gap-[15px] text-white">
+          <div className="flex flex-col gap-[8px] text-white md:pl-[20px] lg:pl-[0px]">
             <HeadingText h1Text={"Useful Links"} />
-            <Paragraph paraText={"About Us"} />
-            <Paragraph paraText={"Contact"} />
-            <Paragraph paraText={"Hot Deals"} />
-            <Paragraph paraText={"Promotion"} />
-            <Paragraph paraText={"New Products"} />
+            <div className="flex md:flex-row lg:flex-col md:gap-[10px] lg:gap-[15px]">
+              <Paragraph paraText={"About Us"} />
+              <Paragraph paraText={"Contact"} />
+              <Paragraph paraText={"Hot Deals"} />
+              <Paragraph paraText={"Promotion"} />
+              <Paragraph paraText={"New Products"} />
+            </div>
           </div>
 
-          <div className="flex flex-col gap-[15px] text-white">
+          <div className="flex flex-col gap-[8px] text-white md:pl-[20px] lg:pl-[0px]">
             <HeadingText h1Text={"Help center"} />
-            <Paragraph paraText={"Payments"} />
-            <Paragraph paraText={"Refund"} />
-            <Paragraph paraText={"Checkout"} />
-            <Paragraph paraText={"Shopping"} />
-            <Paragraph paraText={"Q&A"} />
-            <Paragraph paraText={"Privacy Policy"} />
+            <div className="flex md:flex-row lg:flex-col md:gap-[10px] lg:gap-[15px]">
+              <Paragraph paraText={"Payments"} />
+              <Paragraph paraText={"Refund"} />
+              <Paragraph paraText={"Checkout"} />
+              <Paragraph paraText={"Shopping"} />
+              <Paragraph paraText={"Q&A"} />
+              <Paragraph paraText={"Privacy Policy"} />
+            </div>
           </div>
         </div>
       </div>
