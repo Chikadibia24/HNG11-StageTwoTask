@@ -38,7 +38,7 @@ const Footer = () => {
     }
 
   return (
-    <footer className="footer flex flex-col gap-[32px] justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
+    <footer className="footer flex-col gap-[32px] hidden md:flex justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
       <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
         <button
           onClick={goToHomePage}

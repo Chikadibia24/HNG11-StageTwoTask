@@ -7,6 +7,7 @@ import SearchBar from "../components/searchbar";
 import "/src/App.css";
 import arrowDownGray from "/src/assets/arrowDownGray.svg";
 import filterIcon from "/src/assets/filterIcon.svg";
+import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -122,6 +123,8 @@ const HomePage = () => {
       <ProductData />
       <Pagination />
       <Footer />
+
+      <MobileBottomNavBar/>
     </div>
   );
 };
