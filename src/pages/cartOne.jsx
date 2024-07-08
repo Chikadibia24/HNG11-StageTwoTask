@@ -1,15 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import "/src/App.css";
-import Footer from "../footer";
-import NavBar from "../navbar";
-import ProductData from "../productdata";
-import SearchBar from "../searchbar";
-import arrowRight from "/src/assets/arrowRight.svg";
-import deleteIcon from "/src/assets/deleteIcon.svg";
-import plusIcon from "/src/assets/plusIcon.svg";
-import minusIcon from "/src/assets/minusIcon.svg";
-import infoIcon from "/src/assets/infoIcon.svg";
+import Footer from "../components/footer";
+import NavBar from "../components/navbar";
+import ProductData from "../components/productdata";
+import SearchBar from "../components/searchbar";
+import arrowRight from "../assets/arrowRight.svg";
+import deleteIcon from "../assets/deleteIcon.svg";
+import plusIcon from "../assets/plusIcon.svg";
+import minusIcon from "../assets/minusIcon.svg";
+import infoIcon from "../assets/infoIcon.svg";
 
 const CartOne = () => {
+  
+const navigate = useNavigate();
+
+const goToCheckoutOne = () => {
+  navigate("/checkoutone");
+};
+
+
   const Cart = () => {
     return (
       <div className="flex flex-col gap-[8px] w-[85%]">
@@ -92,7 +101,10 @@ const CartOne = () => {
               <p>NGN 87,000</p>
             </div>
 
-            <button className="flex items-center justify-center h-[40px] bg-black text-[white] text-[16px] rounded-[4px] w-[100%]">
+            <button
+              onClick={goToCheckoutOne}
+              className="flex items-center justify-center h-[40px] bg-black text-[white] text-[16px] rounded-[4px] w-[100%]"
+            >
               Proceed to checkout
             </button>
 
@@ -103,8 +115,7 @@ const CartOne = () => {
         </div>
       </div>
     );
-}
-
+  };
 
   return (
     <div className="flex flex-col items-center gap-[50px]">
@@ -115,7 +126,7 @@ const CartOne = () => {
         <div className="flex items-center gap-[5px] self-start">
           <h1 className="pl-[70px] text-[28px]">Similar Products</h1>
           <div className="flex items-center justify-center bg-[#EEE] w-[30px] h-[30px] rounded-full">
-            <img src={arrowRight} alt="" className="hover:cursor-pointer"/>
+            <img src={arrowRight} alt="" className="hover:cursor-pointer" />
           </div>
         </div>
 
@@ -124,6 +135,6 @@ const CartOne = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default CartOne;

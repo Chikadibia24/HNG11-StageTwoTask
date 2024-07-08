@@ -1,13 +1,13 @@
-import CheckOutNavBar from "../checkOutNavBar";
-import logoWhite from "/src/assets/logoWhite.svg";
-import favoriteIconWhite from "/src/assets/favoriteIconWhite.svg";
-import shoppingCartWhite from "/src/assets/shoppingCartWhite.svg";
-import arrowDownWhite from "/src/assets/arrowDownWhite.svg";
-import OrderIDBar from "../orderIDBar";
-import OrderedTV from "../orderedTV";
-import OrderedTVPayment from "../orderedTVPayment";
-import OrderSummary from "../orderSummary";
-import Footer from "../footer";
+import logoWhite from "../assets/logoWhite.svg";
+import favoriteIconWhite from "../assets/favoriteIconWhite.svg";
+import shoppingCartWhite from "../assets/shoppingCartWhite.svg";
+import arrowDownWhite from "../assets/arrowDownWhite.svg";
+import CheckOutNavBar from "../components/checkOutNavBar";
+import OrderIDBar from "../components/orderIDBar";
+import OrderedTV from "../components/orderedTV";
+import OrderedTVPayment from "../components/orderedTVPayment";
+import OrderSummary from "../components/orderSummary";
+import Footer from "../components/footer";
 
 const CheckOutTwo = () => {
 

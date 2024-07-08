@@ -5,16 +5,26 @@ import iconCancel from "../assets/iconCancel.svg";
 import favoriteIcon from "../assets/favoriteIcon.svg";
 import shoppingCart from "../assets/shoppingCart.svg";
 import arrowDownGray from "../assets/arrowDownGray.svg";
+import { useNavigate } from "react-router-dom";
+// import HomePage from "../pages/homepage";
 
-const SearchBar = () => {
+const SearchBar = ({ onClickCart }) => {
+  const navigate = useNavigate();
+  
+  const goToHomePage = () => {
+    navigate("/home");
+  };
+
+
+
   return (
     <div className="flex justify-between  w-[96%] h-[50px]">
-      <div className="flex items-center gap-[8px]">
+      <button onClick={goToHomePage} className="flex items-center gap-[8px]">
         <img src={logo} alt="logo" className="hover:cursor-pointer" />
         <p className="text-black text-[24px] hover:cursor-pointer">
           Danchika Electronics
         </p>
-      </div>
+      </button>
 
       <div className="flex items-center gap-[8px]">
         <div className="flex items-center gap-[6px] h-[45px] w-[400px] border-[1px] border-[#a9aaab] px-[15px] rounded-[8px]">
@@ -53,7 +63,7 @@ const SearchBar = () => {
           <p className="text-[#404040] text-[18px]">Favorites</p>
         </div>
 
-        <button className="flex items-center gap-[6px]">
+        <button onClick={onClickCart} className="flex items-center gap-[6px]">
           <img
             src={shoppingCart}
             alt="shoppingCart"

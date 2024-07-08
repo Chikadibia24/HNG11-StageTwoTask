@@ -7,7 +7,7 @@ import bankIcon from "../assets/bankIcon.svg";
 import googlePayIcon from "../assets/googlePayIcon.svg";
 
 
-const PaymentForm = () => {
+const PaymentForm = ({onClick}) => {
 
   const Headings = ({h1Text,paraText,divClassName}) => {
     return (
@@ -122,7 +122,7 @@ const PaymentForm = () => {
 
   const SubmitButton = () => {
     return (
-      <button className="flex items-center justify-center self-center bg-black py-[10px] px-[10px] text-white text-[16px] rounded-[4px] w-[80%]">
+      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[10px] px-[10px] text-white text-[16px] rounded-[4px] w-[80%]">
         Proceed to checkout
       </button>
     );

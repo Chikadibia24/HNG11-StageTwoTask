@@ -4,8 +4,17 @@ import linkedInIcon from "../assets/linkedInIcon.svg";
 import instagramIcon from "../assets/instagramIcon.svg";
 import twitterIcon from "../assets/twitterIcon.svg";
 import logo from "../assets/logo.svg"
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const goToHomePage = () => {
+    navigate("/home");
+  };
+
+
   const BlackCircle = ({ image, altText }) => {
     return (
       <div className="flex items-center justify-center bg-[#000] text-white w-[44px] h-[44px] rounded-full hover:cursor-pointer">
@@ -31,12 +40,12 @@ const Footer = () => {
   return (
     <footer className="footer flex flex-col gap-[32px] justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
       <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
-        <div className="flex items-center gap-[8px]">
+        <button onClick={goToHomePage} className="flex items-center gap-[8px]">
           <img src={logo} alt="logo" className="hover:cursor-pointer" />
           <p className="text-black text-[24px] hover:cursor-pointer">
             Danchika Electronics
           </p>
-        </div>
+        </button>
 
         <div className="flex justify-around w-[60%] gap-[15px] bg-[#606060] text-white pt-[20px] pb-[20px] rounded-[32px]">
           <div className="flex flex-col gap-[15px] text-white">

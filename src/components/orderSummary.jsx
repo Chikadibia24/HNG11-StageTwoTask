@@ -1,3 +1,4 @@
+import "../App.css";
 import arrowUpSlant from "../assets/arrowUpSlant.svg";
 import orderIssuesIcon from "../assets/orderIssuesIcon.svg";
 import orderReturnIcon from "../assets/orderReturnIcon.svg";
@@ -5,11 +6,8 @@ import cardIcon from "../assets/cardIcon.svg";
 import deliveryIcon from "../assets/deliveryIcon.svg";
 import infoIcon from "../assets/infoIcon.svg";
 
-
-
 const OrderSummary = () => {
-
-  const NeedHelp = ({icon,text}) => {
+  const NeedHelp = ({ icon, text }) => {
     return (
       <div className="flex items-center gap-[6px]">
         <img src={icon} alt={icon} className="hover:cursor-pointer" />
@@ -23,18 +21,19 @@ const OrderSummary = () => {
         />
       </div>
     );
-  }
+  };
 
-  const Summary = ({className,text1,icon,text2}) => {
+  const Summary = ({ className, text1, icon, text2 }) => {
     return (
       <div className={`flex items-center justify-between ${className}`}>
-        <p className="flex items-center gap-[2px]">{text1}
+        <p className="flex items-center gap-[2px]">
+          {text1}
           <img src={icon} alt={icon} />
         </p>
         <p>{text2}</p>
       </div>
     );
-  }
+  };
 
   return (
     <div className="needHelp-summary-container flex justify-between px-[20px] w-[100%]">
@@ -100,6 +99,6 @@ const OrderSummary = () => {
       </div>
     </div>
   );
-}
+};
 
 export default OrderSummary;
