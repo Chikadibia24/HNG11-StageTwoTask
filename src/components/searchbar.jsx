@@ -18,13 +18,13 @@ const SearchBar = ({ onClickCart }) => {
 
 
   return (
-    <div className="flex justify-between sm:w-[97%] lg:w-[96%] h-[50px]">
+    <div className="flex justify-between w-[97%] md:w-[97%] lg:w-[96%] h-[50px]">
       <button
         onClick={goToHomePage}
         className="flex items-center md:gap-[4px] lg:gap-[5px] px-[3px]"
       >
         <img src={logo} alt="logo" className="md:w-[40px] lg:w-[45px]" />
-        <div className="flex flex-col items-start justify-center">
+        <div className="hidden md:flex flex-col items-start justify-center">
           <p className="text-black md:text-[20px] lg:text-[23px] mb-[-5px]">
             Danchika
           </p>
@@ -36,33 +36,33 @@ const SearchBar = ({ onClickCart }) => {
       </button>
 
       <div className="flex items-center gap-[8px]">
-        <div className="flex items-center md:gap-[4px] lg:gap-[6px] h-[45px] md:w-[260px] lg:w-[400px] border-[1px] border-[#a9aaab] md:px-[8px] lg:px-[15px] rounded-[8px]">
+        <div className="flex items-center md:gap-[4px] lg:gap-[6px] h-[45px] w-[280px] md:w-[260px] lg:w-[400px] border-[1px] border-[#a9aaab] px-[10px] md:px-[8px] lg:px-[15px] rounded-[8px]">
           <img
             src={searchIcon}
             alt="searchIcon"
-            className="hover:cursor-pointer sm:w-[15px] lg:w-[initial]"
+            className="hover:cursor-pointer w-[15px] lg:w-[initial]"
           />
 
           <input
             type="text"
             placeholder="Smart Televisions"
-            className="sm:text-[14px] lg:text-[16px] text-[#404040] h-[43px] md:w-[220px] lg:w-[340px] border-[none] focus:"
+            className="pl-[6px] lg:pl-[initial] text-[14px] lg:text-[16px] text-[#404040] h-[43px] w-[249px] md:w-[220px] lg:w-[340px] border-[none]"
           />
 
           <img
             src={iconCancel}
             alt="iconCancel"
-            className="hover:cursor-pointer sm:w-[15px] lg:w-[initial]"
+            className="hover:cursor-pointer w-[15px] lg:w-[initial]"
           />
         </div>
 
-        <button className="flex items-center justify-center h-[44px] lg:py-[9px] md:px-[16px] lg:px-[25px] bg-black rounded-[8px] hover:cursor-pointer  ">
+        <button className="hidden md:flex items-center justify-center h-[44px] lg:py-[9px] md:px-[16px] lg:px-[25px] bg-black rounded-[8px] hover:cursor-pointer  ">
           <p className="text-white md:text-[14px] lg:text-[18px]">Search</p>
         </button>
       </div>
 
       <div className="favorite-container flex gap-[15px]">
-        <div className="flex items-center gap-[6px]">
+        <div className="hidden md:flex items-center gap-[6px]">
           <img
             src={favoriteIcon}
             alt="favoriteIcon"
@@ -79,12 +79,18 @@ const SearchBar = ({ onClickCart }) => {
             alt="shoppingCart"
             className="hover:cursor-pointer sm:w-[initial] md:w-[20px] lg:w-[initial]"
           />
-          <p className="text-[#404040] md:text-[14px] lg:text-[18px]">Cart</p>
+          <p className="hidden md:block text-[#404040] md:text-[14px] lg:text-[18px]">Cart</p>
         </button>
 
-        <div className="flex items-center gap-[6px]">
-          <img src={userIcon} alt="userIcon" className="sm:hidden md:block lg:hidden "/>
-          <p className="text-[#404040] text-[18px] sm:hidden md:hidden lg:block">Chika</p>
+        <div className="hidden md:flex items-center gap-[6px]">
+          <img
+            src={userIcon}
+            alt="userIcon"
+            className="sm:hidden md:block lg:hidden "
+          />
+          <p className="text-[#404040] text-[18px] sm:hidden md:hidden lg:block">
+            Chika
+          </p>
           <img
             src={arrowDownGray}
             alt="arrowDownGray"
