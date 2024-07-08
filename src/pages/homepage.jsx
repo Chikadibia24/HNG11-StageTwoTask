@@ -106,7 +106,7 @@ const HomePage = () => {
             name={"date"}
             id={"date"}
             placeholder={"Release Date"}
-            className={"sm:w-[120px] lg:w-[143px]"}
+            className={"sm:w-[125px] lg:w-[143px]"}
           />
           <FilterBar
             image={arrowDownGray}
@@ -114,7 +114,7 @@ const HomePage = () => {
             name={"discount-and-deals"}
             id={"discount-and-deals"}
             placeholder={"Discount and Deals"}
-            className={"sm:w-[118px] lg:w-[150px]"}
+            className={"sm:w-[117px] lg:w-[150px]"}
           />
         </div>
       </div>
