@@ -9,6 +9,7 @@ import deleteIcon from "../assets/deleteIcon.svg";
 import plusIcon from "../assets/plusIcon.svg";
 import minusIcon from "../assets/minusIcon.svg";
 import infoIcon from "../assets/infoIcon.svg";
+import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
 const CartOne = () => {
   
@@ -21,30 +22,32 @@ const goToCheckoutOne = () => {
 
   const Cart = () => {
     return (
-      <div className="flex flex-col gap-[8px] md:w-[96%] lg:w-[85%]">
+      <div className="flex flex-col gap-[8px] w-[94%] md:w-[96%] lg:w-[85%]">
         <div className="cart-sub-container-1">
           <h1 className="text-[30px]">Cart</h1>
         </div>
 
-        <div className="cart-sub-container-2 flex items-center justify-center border-[1px] border-[#a9aaab] rounded-[8px] w-[100%] pl-[10px]">
-          <div className="cart-product-details flex items-center md:justify-center lg:justify-start flex-wrap gap-[20px] md:w-[50%] lg:w-[70%]">
-            <div className="cart-image-container flex items-center justify-center md:w-[330px] lg:w-[205px] md:h-[190px] md:mt-[15px] lg:mt-[initial] lg:h-[155px] rounded-[8px]">
+        <div className="cart-sub-container-2 flex items-center justify-center flex-col gap-[40px] md:flex-row md:gap-[0px] border-[1px] border-[#a9aaab] rounded-[8px] w-[100%] pt-[30px] md:pt-[initial] md:pl-[10px]">
+          <div className="cart-product-details flex items-center justify-center lg:justify-start flex-wrap gap-[20px] w-[98%] md:w-[50%] lg:w-[70%] py-[10px] md:py-[initial]">
+            <div className="cart-image-container flex items-center justify-center w-[352px] h-[230px] md:w-[330px] md:h-[190px] md:mt-[15px] lg:mt-[initial] lg:w-[205px] lg:h-[155px] rounded-[8px]">
               <img
                 src={
                   "https://res.cloudinary.com/chikadibia/image/upload/v1720282880/imageTV_df1cpl.png"
                 }
                 alt="imageTV"
-                className="md:w-[250px] lg:w-[165px] md:h-[170px] lg:h-[109px]"
+                className="w-[270px] md:w-[250px] md:h-[170px] lg:w-[165px] lg:h-[109px]"
               />
             </div>
 
             <div className="product-title-container flex items-center lg:gap-[25px] md:mb-[15px] lg:mt-[initial]">
-              <div className="product-title flex flex-col gap-[8px]">
+              <div className="product-title flex flex-col gap-[30px] md:gap-[8px]">
                 <div>
-                  <h1 className="md:text-[20px] lg:text-[24px] md:w-[210px] lg:w-[initial]">
+                  <h1 className="text-[16px] md:text-[20px] lg:text-[24px] md:w-[210px] lg:w-[initial]">
                     UFC 43” Inches 4k UHD Smart TV
                   </h1>
-                  <p className="text-[#404040] text-[16px]">Black Color</p>
+                  <p className="text-[#404040] text-[12px] md:text-[16px]">
+                    Black Color
+                  </p>
                 </div>
 
                 <div className="add-to-cart flex items-center justify-between  border-[1px] border-[#a9aaab] rounded-[4px] w-[80px] px-[10px] ">
@@ -62,12 +65,12 @@ const goToCheckoutOne = () => {
                 </div>
               </div>
 
-              <div className="price-button-container flex flex-col gap-[15px] md:self-end lg:self-center">
-                <p className="md:text-[20px] lg:text-[24px] bg-white">
+              <div className="price-button-container flex flex-col gap-[4px] md:gap-[15px] self-end lg:self-center">
+                <p className="text-[16px] md:text-[20px] lg:text-[24px] bg-white">
                   NGN 100,000
                 </p>
-                <button className="flex items-center justify-center md:gap-[3px] lg:gap-[20px] md:py-[6px] lg:py-[10px] px-0 bg-[#FFE3E3] text-[#FF0000] text-[16px] rounded-[8px]">
-                  <span>Delete</span>
+                <button className="flex items-center justify-center self-end w-[30px] h-[30px] rounded-[5px] md:w-[initial] md:h-[initial] md:gap-[3px] lg:gap-[20px] md:py-[6px] lg:py-[10px]  md:px-0 bg-[#FFE3E3] text-[#FF0000] text-[16px] md:rounded-[8px]">
+                  <span className="hidden md:block">Delete</span>
                   <span>
                     <img
                       src={deleteIcon}
@@ -80,7 +83,7 @@ const goToCheckoutOne = () => {
             </div>
           </div>
 
-          <div className="subtotal flex flex-col items-center gap-[10px] border-l-[1px] border-l-[#a9aaab] md:w-[48%] lg:w-[28%] px-[20px] py-[10px]">
+          <div className="subtotal flex flex-col items-center gap-[10px] border-t-[1px]  border-t-[#a9aaab] md:border-t-[0px] md:pt-[initial] md:border-l-[1px] md:border-l-[#a9aaab] w-[90%] md:w-[48%] lg:w-[28%] md:px-[20px] py-[45px] md:py-[10px]">
             <div className="flex items-center justify-between w-[100%] text-[24px]">
               <p>Subtotal</p>
               <p>NGN 100,000</p>
@@ -124,7 +127,7 @@ const goToCheckoutOne = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-[50px]">
+    <div className="flex flex-col gap-[50px]">
       <NavBar />
       <SearchBar />
       <div className="flex flex-col items-center gap-[20px]">
@@ -139,6 +142,10 @@ const goToCheckoutOne = () => {
         <ProductData />
       </div>
       <Footer />
+
+      <div className="w-100% mt-[50px]">
+        <MobileBottomNavBar />
+      </div>
     </div>
   );
 };

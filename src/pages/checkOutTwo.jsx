@@ -8,6 +8,7 @@ import OrderedTV from "../components/orderedTV";
 import OrderedTVPayment from "../components/orderedTVPayment";
 import OrderSummary from "../components/orderSummary";
 import Footer from "../components/footer";
+import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
 const CheckOutTwo = () => {
 
@@ -34,23 +35,24 @@ const CheckOutTwo = () => {
       </div>
 
       <div>
-        <OrderedTV/>
+        <OrderedTV />
       </div>
 
       <div>
-        <OrderedTVPayment/>
+        <OrderedTVPayment />
       </div>
 
       <div>
-        <OrderSummary/>
+        <OrderSummary />
       </div>
 
       <div className="flex items-center justify-center w-[100] pb-[100px]">
-        <CheckOutButton/>
+        <CheckOutButton />
       </div>
 
       <div>
-        <Footer/>
+        <Footer />
+        <MobileBottomNavBar />
       </div>
     </div>
   );

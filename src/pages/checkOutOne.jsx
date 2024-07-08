@@ -7,6 +7,7 @@ import arrowDownWhite from "../assets/arrowDownWhite.svg";
 import PaymentForm from "../components/paymentForm";
 import CheckOutOnePriceDetails from "../components/checkOutOnePriceDetails";
 import Footer from "../components/footer";
+import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
 const CheckOutOne = () => {
 
@@ -41,6 +42,7 @@ const CheckOutOne = () => {
 
       <div className="w-[100%] flex flex-col items-center">
         <Footer />
+        <MobileBottomNavBar />
       </div>
     </div>
   );
