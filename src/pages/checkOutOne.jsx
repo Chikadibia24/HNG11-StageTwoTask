@@ -30,8 +30,8 @@ const CheckOutOne = () => {
         downArrow={arrowDownWhite}
       />
 
-      <div className="flex w-[100%]">
-        <div className="md:w-[62%] lg:w-[55%] border-r border-r-[#a9aaab] md:px-[20px] md:pt-[30px] lg:p-[30px]">
+      <div className="flex w-[100%] pt-[20px] px-[12px] md:pt-[0] md:px-[0]">
+        <div className="md:w-[62%] lg:w-[55%] md:border-r md:border-r-[#a9aaab] md:px-[20px] md:pt-[30px] lg:p-[30px]">
           <PaymentForm onClick={goToCheckoutTwo} />
         </div>
 

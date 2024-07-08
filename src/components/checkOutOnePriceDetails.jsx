@@ -4,7 +4,7 @@ import imageTV from "../assets/imageTV.png";
 
 const CheckOutOnePriceDetails = () => {
   return (
-    <div className="flex flex-col gap-[8px]">
+    <div className="hidden md:flex flex-col gap-[8px]">
       <div className="tv-image-description-container flex items-center md:gap-[10px] lg:gap-[0px] lg:justify-between">
         <div className="cart-image-container flex items-center justify-center md:w-[120px] md:h-[92px] lg:w-[220px] lg:h-[135px] ">
           <img
