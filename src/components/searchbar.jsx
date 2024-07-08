@@ -6,7 +6,7 @@ import favoriteIcon from "../assets/favoriteIcon.svg";
 import shoppingCart from "../assets/shoppingCart.svg";
 import arrowDownGray from "../assets/arrowDownGray.svg";
 import { useNavigate } from "react-router-dom";
-// import HomePage from "../pages/homepage";
+import userIcon from "../assets/userIcon.svg";
 
 const SearchBar = ({ onClickCart }) => {
   const navigate = useNavigate();
@@ -18,39 +18,47 @@ const SearchBar = ({ onClickCart }) => {
 
 
   return (
-    <div className="flex justify-between  w-[96%] h-[50px]">
-      <button onClick={goToHomePage} className="flex items-center gap-[8px]">
-        <img src={logo} alt="logo" className="hover:cursor-pointer" />
-        <p className="text-black text-[24px] hover:cursor-pointer">
-          Danchika Electronics
-        </p>
+    <div className="flex justify-between sm:w-[97%] lg:w-[96%] h-[50px]">
+      <button
+        onClick={goToHomePage}
+        className="flex items-center md:gap-[4px] lg:gap-[5px] px-[3px]"
+      >
+        <img src={logo} alt="logo" className="md:w-[40px] lg:w-[45px]" />
+        <div className="flex flex-col items-start justify-center">
+          <p className="text-black md:text-[20px] lg:text-[23px] mb-[-5px]">
+            Danchika
+          </p>
+
+          <p className="text-black md:text-[20px] lg:text-[23px] mt-[-5px]">
+            Electronics
+          </p>
+        </div>
       </button>
 
       <div className="flex items-center gap-[8px]">
-        <div className="flex items-center gap-[6px] h-[45px] w-[400px] border-[1px] border-[#a9aaab] px-[15px] rounded-[8px]">
-          <div className="flex items-center gap-[6px]">
-            <img
-              src={searchIcon}
-              alt="searchIcon"
-              className="hover:cursor-pointer"
-            />
-            <input
-              type="text"
-              placeholder="Smart Televisions"
-              className="text-[16px] text-[#404040] h-[42px] w-[340px] border-[none] focus:"
-            />
-          </div>
+        <div className="flex items-center md:gap-[4px] lg:gap-[6px] h-[45px] md:w-[260px] lg:w-[400px] border-[1px] border-[#a9aaab] md:px-[8px] lg:px-[15px] rounded-[8px]">
+          <img
+            src={searchIcon}
+            alt="searchIcon"
+            className="hover:cursor-pointer sm:w-[15px] lg:w-[initial]"
+          />
+
+          <input
+            type="text"
+            placeholder="Smart Televisions"
+            className="sm:text-[14px] lg:text-[16px] text-[#404040] h-[43px] md:w-[220px] lg:w-[340px] border-[none] focus:"
+          />
 
           <img
             src={iconCancel}
             alt="iconCancel"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer sm:w-[15px] lg:w-[initial]"
           />
         </div>
 
-        <div className="flex items-center justify-center py-[9px] px-[25px] bg-black rounded-[8px] hover:cursor-pointer  ">
-          <p className="text-white text-[18px]">Search</p>
-        </div>
+        <button className="flex items-center justify-center h-[44px] lg:py-[9px] md:px-[16px] lg:px-[25px] bg-black rounded-[8px] hover:cursor-pointer  ">
+          <p className="text-white md:text-[14px] lg:text-[18px]">Search</p>
+        </button>
       </div>
 
       <div className="favorite-container flex gap-[15px]">
@@ -58,26 +66,29 @@ const SearchBar = ({ onClickCart }) => {
           <img
             src={favoriteIcon}
             alt="favoriteIcon"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer md:w-[18px] lg:w-[initial]"
           />
-          <p className="text-[#404040] text-[18px]">Favorites</p>
+          <p className="text-[#404040] md:text-[14px] lg:text-[18px]">
+            Favorites
+          </p>
         </div>
 
         <button onClick={onClickCart} className="flex items-center gap-[6px]">
           <img
             src={shoppingCart}
             alt="shoppingCart"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer sm:w-[initial] md:w-[20px] lg:w-[initial]"
           />
-          <p className="text-[#404040] text-[18px]">Cart</p>
+          <p className="text-[#404040] md:text-[14px] lg:text-[18px]">Cart</p>
         </button>
 
         <div className="flex items-center gap-[6px]">
-          <p className="text-[#404040] text-[18px]">Chika</p>
+          <img src={userIcon} alt="userIcon" className="sm:hidden md:block lg:hidden "/>
+          <p className="text-[#404040] text-[18px] sm:hidden md:hidden lg:block">Chika</p>
           <img
             src={arrowDownGray}
             alt="arrowDownGray"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer md:w-[15px] lg:w-[initial]"
           />
         </div>
       </div>
