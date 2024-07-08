@@ -31,7 +31,6 @@ const PaymentForm = ({onClick}) => {
           className={`${divInputClass} div-input-container flex items-center justify-between border border-[#a9aaab]`}
         >
           <input
-            required
             type={type}
             id={id}
             name={name}
