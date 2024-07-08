@@ -21,27 +21,27 @@ const goToCheckoutOne = () => {
 
   const Cart = () => {
     return (
-      <div className="flex flex-col gap-[8px] w-[85%]">
+      <div className="flex flex-col gap-[8px] md:w-[96%] lg:w-[85%]">
         <div className="cart-sub-container-1">
           <h1 className="text-[30px]">Cart</h1>
         </div>
 
-        <div className="cart-sub-container-2 flex items-center justify-center flex-wrap border-[1px] border-[#a9aaab] rounded-[8px] w-[100%] pl-[10px]">
-          <div className="cart-product-details flex items-center flex-wrap gap-[20px] w-[70%]">
-            <div className="cart-image-container flex items-center justify-center w-[205px] h-[155px] rounded-[8px]">
+        <div className="cart-sub-container-2 flex items-center justify-center border-[1px] border-[#a9aaab] rounded-[8px] w-[100%] pl-[10px]">
+          <div className="cart-product-details flex items-center md:justify-center lg:justify-start flex-wrap gap-[20px] md:w-[50%] lg:w-[70%]">
+            <div className="cart-image-container flex items-center justify-center md:w-[330px] lg:w-[205px] md:h-[190px] md:mt-[15px] lg:mt-[initial] lg:h-[155px] rounded-[8px]">
               <img
                 src={
                   "https://res.cloudinary.com/chikadibia/image/upload/v1720282880/imageTV_df1cpl.png"
                 }
                 alt="imageTV"
-                className="w-[165px] h-[109px]"
+                className="md:w-[250px] lg:w-[165px] md:h-[170px] lg:h-[109px]"
               />
             </div>
 
-            <div className="product-title-container flex items-center gap-[25px]">
+            <div className="product-title-container flex items-center lg:gap-[25px] md:mb-[15px] lg:mt-[initial]">
               <div className="product-title flex flex-col gap-[8px]">
                 <div>
-                  <h1 className="text-[24px]">
+                  <h1 className="md:text-[20px] lg:text-[24px] md:w-[210px] lg:w-[initial]">
                     UFC 43” Inches 4k UHD Smart TV
                   </h1>
                   <p className="text-[#404040] text-[16px]">Black Color</p>
@@ -62,19 +62,25 @@ const goToCheckoutOne = () => {
                 </div>
               </div>
 
-              <div className="price-button-container flex flex-col gap-[15px]">
-                <p className="text-[24px]">NGN 100,000</p>
-                <button className="flex items-center justify-center gap-[20px] py-[10px] px-0 bg-[#FFE3E3] text-[#FF0000] text-[16px] rounded-[8px]">
+              <div className="price-button-container flex flex-col gap-[15px] md:self-end lg:self-center">
+                <p className="md:text-[20px] lg:text-[24px] bg-white">
+                  NGN 100,000
+                </p>
+                <button className="flex items-center justify-center md:gap-[3px] lg:gap-[20px] md:py-[6px] lg:py-[10px] px-0 bg-[#FFE3E3] text-[#FF0000] text-[16px] rounded-[8px]">
                   <span>Delete</span>
                   <span>
-                    <img src={deleteIcon} alt="deleteIcon" />
+                    <img
+                      src={deleteIcon}
+                      alt="deleteIcon"
+                      className="lg:w-[initial] md:w-[16px] "
+                    />
                   </span>
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="subtotal flex flex-col items-center gap-[10px] border-l-[1px] border-l-[#a9aaab] w-[28%] px-[20px] py-[10px]">
+          <div className="subtotal flex flex-col items-center gap-[10px] border-l-[1px] border-l-[#a9aaab] md:w-[48%] lg:w-[28%] px-[20px] py-[10px]">
             <div className="flex items-center justify-between w-[100%] text-[24px]">
               <p>Subtotal</p>
               <p>NGN 100,000</p>
