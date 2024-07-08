@@ -189,7 +189,7 @@ const PaymentForm = ({onClick}) => {
           type={"number"}
           id={"phoneNumber"}
           name={"phoneNumber"}
-          placeholder={"09058421909"}
+          placeholder={"00000000"}
           divInputClass={"w-[100%]"}
           inputClassName={"w-[100%]"}
         />
@@ -270,7 +270,7 @@ const PaymentForm = ({onClick}) => {
             type={"number"}
             id={"cardNumber"}
             name={"cardNumber"}
-            placeholder={"5134 **** **** 3421"}
+            placeholder={"00000000000"}
             divInputClass={"w-[100%]"}
             inputClassName={"w-[100%]"}
           />
@@ -291,7 +291,7 @@ const PaymentForm = ({onClick}) => {
               type={"number"}
               id={"cvv"}
               name={"cvv"}
-              placeholder={"***"}
+              placeholder={"000"}
               divInputClass={"w-[100%]"}
               inputClassName={"w-[100%] "}
             />
