@@ -29,7 +29,7 @@ const CartOne = () => {
     return (
       <div className="flex flex-col gap-[8px] w-[94%] md:w-[96%] lg:w-[88%]">
         <div className="cart-sub-container-1">
-          <h1 className="text-[30px]">Cart</h1>
+          <h1 className="text-[30px] pl-[1px]">Cart</h1>
         </div>
 
         <div className="cart-sub-container-2 flex items-center justify-center flex-col gap-[40px] md:flex-row md:gap-[0px] border-[1px] border-[#4040407f] rounded-[8px] w-[100%] pt-[30px] md:pt-[initial] md:pl-[20px]">

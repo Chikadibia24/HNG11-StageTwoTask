@@ -32,7 +32,7 @@ const CheckOutOne = () => {
       />
 
       <div className="flex w-[100%] pt-[20px] px-[12px] md:pt-[0] md:px-[0] lg:px-[64px]">
-        <div className="md:w-[62%] lg:w-[64%] md:border-r md:border-r-[#a9aaab] md:px-[20px] md:pt-[30px] lg:p-[30px] lg:pr-[20px] ">
+        <div className="md:w-[62%] lg:w-[64%] md:border-r md:border-r-[#a9aaab] md:px-[20px] md:pt-[30px] lg:pt-[30px] lg:pr-[20px] lg:pl-[0px]">
           <PaymentForm onClick={goToCheckoutTwo} />
         </div>
 
