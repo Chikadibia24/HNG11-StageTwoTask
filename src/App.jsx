@@ -11,6 +11,7 @@ import CartOne from "./pages/cartOne";
 import CheckOutOne from "./pages/checkOutOne"
 import CheckOutTwo from "./pages/checkOutTwo";
 import Layout from "./pages/Layout";
+import CheckOutThree from "./pages/CheckOutThree";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/cart" element={<CartOne />} />
             <Route path="/checkoutone" element={<CheckOutOne />} />
             <Route path="/checkouttwo" element={<CheckOutTwo />} />
+            <Route path="/CheckOutThree" element={<CheckOutThree />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
