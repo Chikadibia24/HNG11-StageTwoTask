@@ -37,7 +37,7 @@ const HomePage = () => {
           name={name}
           id={id}
           placeholder={placeholder}
-          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] py-[6px] ${className}`}
+          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] h-[30px] py-[6px] ${className}`}
         />
         <img src={image} alt={image} className="hover:cursor-pointer w-[10px] h-[7px] md:w-[11px] md:h-[8px] lg:w-[initial] lg:h-[initial]" />
       </div>
@@ -54,8 +54,8 @@ const HomePage = () => {
         <div className="flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-[10px] md:gap-[9px] lg:gap-[15px]">
           <FilterIcon />
 
-          <div className="both-filters-wrapper flex flex-col gap-[10px] md:gap-[9px] md:flex-row">
-            <div className="first-filter-row-wrapper flex items-center gap-[6px] md:gap-[9px] lg:gap-[15px]">
+          <div className="both-filters-wrapper flex flex-col gap-[15px] md:gap-[9px] md:flex-row">
+            <div className="first-filter-row-wrapper flex items-center gap-[9px] md:gap-[9px] lg:gap-[15px]">
               <FilterBar
                 image={arrowDownGray}
                 type={"text"}
@@ -98,14 +98,14 @@ const HomePage = () => {
               />
             </div>
 
-            <div className="second-filter-row-wrapper flex items-center gap-[6px] md:gap-[9px] lg:gap-[15px]">
+            <div className="second-filter-row-wrapper flex items-center gap-[10px] md:gap-[9px] lg:gap-[15px]">
               <FilterBar
                 image={arrowDownGray}
                 type={"text"}
                 name={"price"}
                 id={"price"}
                 placeholder={"Price"}
-                className={"w-[27px] md:w-[34px] lg:w-[60px]"}
+                className={"w-[32px] md:w-[34px] lg:w-[60px]"}
               />
               <FilterBar
                 image={arrowDownGray}

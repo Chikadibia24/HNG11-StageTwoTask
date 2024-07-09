@@ -35,7 +35,7 @@ const PaymentForm = ({onClick}) => {
             id={id}
             name={name}
             placeholder={placeholder}
-            className={`${inputClassName} py-[8px] px-[6px] lg:px-[10px]`}
+            className={`${inputClassName} py-[8px] h-[45px] px-[6px] lg:px-[10px]`}
           />
           <img src={icon} alt={icon} className={`${imageClassName} w-[16px] lg:w-[initial] pr-[6px] lg:pr-[10px] hover:cursor-pointer`} />
         </div>
@@ -121,7 +121,7 @@ const PaymentForm = ({onClick}) => {
 
   const SubmitButton = () => {
     return (
-      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[10px] px-[10px] text-white text-[16px] rounded-[4px] w-[100%] lg:w-[80%]">
+      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[20px] px-[10px] text-white text-[16px] rounded-[4px] w-[100%] lg:w-[80%]">
         Proceed to checkout
       </button>
     );
