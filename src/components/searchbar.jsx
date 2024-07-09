@@ -76,7 +76,7 @@ const SearchBar = ({ onClickCart }) => {
           </p>
         </div>
 
-        <button onClick={onClickCart} className="flex items-center gap-[6px]">
+        <button onClick={onClickCart} className="flex items-center justify-around gap-[0px]">
           <img
             src={shoppingCart}
             alt="shoppingCart"
