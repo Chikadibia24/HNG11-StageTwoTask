@@ -30,7 +30,7 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
       <button onClick={goToHomePage} className="flex items-center gap-[8px]">
         <img src={logoIcon} alt="logo" className="md:w-[40px] lg:w-[45px]" />
 
-        <div className="flex flex-col items-start">
+        <div className="hidden md:flex flex-col items-start">
           <p className={`${paraClassName} mb-[-5px] md:text-[20px] lg:text-[24px]`}>
             Danchika
           </p>
@@ -42,7 +42,7 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
       </button>
 
       <div className="favorite-container flex gap-[15px]">
-        <div className="flex items-center gap-[6px]">
+        <div className="hidden md:flex items-center gap-[6px]">
           <img
             src={iconFavorite}
             alt="favoriteIcon"
@@ -57,14 +57,14 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
           <img
             src={cartIcon}
             alt="shoppingCart"
-            className="hover:cursor-pointer md:w-[19px] lg:w-[initial]"
+            className="hover:cursor-pointer w-[35px] md:w-[19px] lg:w-[27px]"
           />
-          <p className={`${paraClassName} sm:text-[16px] lg:text-[18px]`}>
+          <p className={`${paraClassName} hidden md:block md:text-[16px] lg:text-[18px]`}>
             Cart
           </p>
         </button>
 
-        <div className="flex items-center gap-[6px]">
+        <div className="hidden md:flex items-center gap-[6px]">
           <img src={userIcon} alt="userIcon" className="md:block lg:hidden" />
           <p className={`${paraClassName} text-[18px] sm:hidden lg:block`}>
             Chika

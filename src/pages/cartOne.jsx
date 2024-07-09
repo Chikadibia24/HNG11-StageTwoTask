@@ -127,7 +127,7 @@ const goToCheckoutOne = () => {
   };
 
   return (
-    <div className="flex flex-col gap-[50px]">
+    <div className="flex flex-col items-center gap-[50px]">
       <NavBar />
       <SearchBar />
       <div className="flex flex-col items-center gap-[20px]">
@@ -143,7 +143,7 @@ const goToCheckoutOne = () => {
       </div>
       <Footer />
 
-      <div className="w-100% mt-[50px]">
+      <div className="flex justify-center w-100% mt-[50px]">
         <MobileBottomNavBar />
       </div>
     </div>

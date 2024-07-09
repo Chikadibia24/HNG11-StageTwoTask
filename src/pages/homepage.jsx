@@ -37,7 +37,7 @@ const HomePage = () => {
           name={name}
           id={id}
           placeholder={placeholder}
-          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] py-[2px] lg:py-[3px] ${className}`}
+          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] py-[6px] ${className}`}
         />
         <img src={image} alt={image} className="hover:cursor-pointer w-[10px] h-[7px] md:w-[11px] md:h-[8px] lg:w-[initial] lg:h-[initial]" />
       </div>
@@ -45,7 +45,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex flex-col gap-[50px] items-center">
+    <div className="flex flex-col gap-[50px]">
       <div className="flex flex-col items-center gap-[30px] w-[100%]">
         <NavBar />
 
@@ -129,10 +129,14 @@ const HomePage = () => {
       </div>
 
       <ProductData />
-      <Pagination />
+      <div className="flex justify-center w-[100%]">
+        <Pagination />
+      </div>
       <Footer />
 
-      <MobileBottomNavBar />
+      <div className="w-[100%] mt-[50px]">
+        <MobileBottomNavBar />
+      </div>
     </div>
   );
 };
