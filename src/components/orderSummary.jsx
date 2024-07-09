@@ -48,7 +48,7 @@ const OrderSummary = () => {
 
   return (
     <div className="needHelp-summary-container flex justify-between px-[15px] md:px-[20px] w-[100%]">
-      <div className="needHelp-container flex flex-col gap-[6px] w-[48%] md:w-[50%] lg:w-[70%]">
+      <div className="needHelp-container flex flex-col gap-[20px] w-[48%] md:w-[50%] lg:w-[70%]">
         <div className="need-help">
           <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">
             Need Help?
