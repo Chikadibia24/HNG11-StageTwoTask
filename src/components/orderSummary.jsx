@@ -7,14 +7,18 @@ import deliveryIcon from "../assets/deliveryIcon.svg";
 import infoIcon from "../assets/infoIcon.svg";
 
 const OrderSummary = () => {
-
-
   const NeedHelp = ({ icon, text }) => {
     return (
       <div className="flex items-center gap-[6px]">
-        <img src={icon} alt={icon} className="hover:cursor-pointer w-[13px] md:w-[initial]" />
+        <img
+          src={icon}
+          alt={icon}
+          className="hover:cursor-pointer w-[13px] md:w-[initial]"
+        />
         <a href="#">
-          <p className="text-[14px] md:text-[15px] lg:text-[18px] text-[#404040] hover:underline">{text}</p>
+          <p className="text-[14px] md:text-[15px] lg:text-[18px] text-[#404040] hover:underline">
+            {text}
+          </p>
         </a>
         <img
           src={arrowUpSlant}
@@ -41,8 +45,8 @@ const OrderSummary = () => {
   };
 
   return (
-    <div className="needHelp-summary-container flex justify-between px-[20px] w-[100%]">
-      <div className="needHelp-container flex flex-col gap-[6px] md:w-[50%] lg:w-[70%]">
+    <div className="needHelp-summary-container flex justify-between px-[15px] md:px-[20px] w-[100%]">
+      <div className="needHelp-container flex flex-col gap-[6px] w-[48%] md:w-[50%] lg:w-[70%]">
         <div className="need-help">
           <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">
             Need Help?
@@ -58,9 +62,11 @@ const OrderSummary = () => {
         <NeedHelp icon={orderReturnIcon} text={"Return issues"} />
       </div>
 
-      <div className="summary-container flex flex-col gap-[8px] md:w-[40%] lg:w-[20%]">
+      <div className="summary-container flex flex-col gap-[8px] w-[52%] md:w-[40%] lg:w-[20%]">
         <div>
-          <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">Summary</h1>
+          <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">
+            Summary
+          </h1>
         </div>
 
         <div>

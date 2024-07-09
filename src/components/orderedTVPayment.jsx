@@ -3,7 +3,7 @@ import visaCardIcon from "../assets/visaCardIcon.svg";
 
 const OrderedTVPayment = () => {
   return (
-    <div className="payment-shipment-main-container p-[20px] w-[100%]">
+    <div className="payment-shipment-main-container p-[20px] w-[100%] px-[15px] md:px-[20px]">
       <div className="payment-shipment-sub-container flex justify-between w-[100%]">
         <div className="payment-container flex flex-col gap-[10px] w-[47%] md:w-[60%] lg:w-[80%]">
           <div className="payment-text">

@@ -14,7 +14,7 @@ const CheckOutTwo = () => {
 
   const CheckOutButton = () => {
     return (
-      <button className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] py-[20px] w-[93%] md:w-[60%] lg:w-[40%]">Pay now</button>
+      <button className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] py-[20px] w-[94%] md:w-[60%] lg:w-[40%]">Pay now</button>
     )
   }
 
