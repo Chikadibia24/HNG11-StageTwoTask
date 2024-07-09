@@ -27,7 +27,7 @@ const CheckOutThree = () => {
   const PaymentConfirmation = () => {
     return (
       <div
-        className={`paymentConfirmation-container flex items-center justify-center w-[100%] h-[610px] fixed z-[10] bottom-[0]`}
+        className={`paymentConfirmation-container flex items-center justify-center w-[100%] h-[100vh] fixed z-[10] bottom-[0]`}
       >
         <div
           className={`confirm-payment flex flex-col gap-[30px] items-center justify-center bg-white p-[35px] w-[450px] h-[250px] border rounded-[10px]`}
