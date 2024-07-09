@@ -28,14 +28,14 @@ const goToCheckoutOne = () => {
         </div>
 
         <div className="cart-sub-container-2 flex items-center justify-center flex-col gap-[40px] md:flex-row md:gap-[0px] border-[1px] border-[#a9aaab] rounded-[8px] w-[100%] pt-[30px] md:pt-[initial] md:pl-[10px]">
-          <div className="cart-product-details flex items-center justify-center lg:justify-start flex-wrap gap-[20px] w-[98%] md:w-[50%] lg:w-[70%] py-[10px] md:py-[initial]">
-            <div className="cart-image-container flex items-center justify-center w-[352px] h-[230px] md:w-[330px] md:h-[190px] md:mt-[15px] lg:mt-[initial] lg:w-[205px] lg:h-[155px] rounded-[8px]">
+          <div className="cart-product-details flex items-center justify-center lg:justify-start flex-wrap lg:flex-nowrap gap-[20px] w-[98%] md:w-[50%] lg:w-[70%] py-[10px] md:py-[initial]">
+            <div className="cart-image-container flex items-center justify-center w-[352px] h-[230px] md:w-[330px] md:h-[190px] md:mt-[15px] lg:mt-[initial] lg:w-[190px] lg:h-[155px] rounded-[8px]">
               <img
                 src={
                   "https://res.cloudinary.com/chikadibia/image/upload/v1720282880/imageTV_df1cpl.png"
                 }
                 alt="imageTV"
-                className="w-[270px] md:w-[250px] md:h-[170px] lg:w-[165px] lg:h-[109px]"
+                className="w-[270px] md:w-[250px] md:h-[170px] lg:w-[160px] lg:h-[109px]"
               />
             </div>
 
@@ -69,7 +69,7 @@ const goToCheckoutOne = () => {
                 <p className="text-[16px] md:text-[20px] lg:text-[24px] bg-white">
                   NGN 100,000
                 </p>
-                <button className="flex items-center justify-center self-end w-[30px] h-[30px] rounded-[5px] md:w-[initial] md:h-[initial] md:gap-[3px] lg:gap-[20px] md:py-[6px] lg:py-[10px]  md:px-0 bg-[#FFE3E3] text-[#FF0000] text-[16px] md:rounded-[8px]">
+                <button className="flex items-center justify-center self-end w-[30px] h-[30px] rounded-[5px] md:w-[initial] md:h-[initial] md:gap-[3px] lg:gap-[20px] md:py-[6px] lg:py-[10px]  md:px-[15px] bg-[#FFE3E3] text-[#FF0000] text-[16px] md:rounded-[8px]">
                   <span className="hidden md:block">Delete</span>
                   <span>
                     <img
