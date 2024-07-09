@@ -137,25 +137,29 @@ const CartOne = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-[50px]">
-      <NavBar />
-      <SearchBar />
-      <div className="flex flex-col items-center gap-[20px]">
-        <Cart />
-        <div className="flex items-center gap-[5px] self-start">
-          <h1 className="pl-[70px] text-[28px]">Similar Products</h1>
-          <div className="flex items-center justify-center bg-[#EEE] w-[30px] h-[30px] rounded-full">
-            <img src={arrowRight} alt="" className="hover:cursor-pointer" />
+    <div>
+      <div className="flex flex-col items-center gap-[50px]">
+        <NavBar />
+        <SearchBar />
+        <div className="flex flex-col items-center gap-[20px]">
+          <Cart />
+          <div className="flex items-center gap-[5px] self-start">
+            <h1 className="pl-[70px] text-[28px]">Similar Products</h1>
+            <div className="flex items-center justify-center bg-[#EEE] w-[30px] h-[30px] rounded-full">
+              <img src={arrowRight} alt="" className="hover:cursor-pointer" />
+            </div>
           </div>
+
+          <ProductData />
         </div>
 
-        <ProductData />
+        <div className="flex justify-center w-100% mt-[50px]">
+          <MobileBottomNavBar />
+        </div>
       </div>
 
-      <Footer />
-      
-      <div className="flex justify-center w-100% mt-[50px]">
-        <MobileBottomNavBar />
+      <div className="flex items-center justify-center w-[100] lg:px-[64px]">
+        <Footer />
       </div>
     </div>
   );

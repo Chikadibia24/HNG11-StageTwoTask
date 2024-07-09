@@ -86,7 +86,7 @@ const CheckOutThree = () => {
         <PaymentConfirmation />
       </div>
 
-      <div className="flex items-center justify-center w-[100]">
+      <div className="flex items-center justify-center w-[100] lg:px-[64px]">
         <Footer />
         <MobileBottomNavBar />
       </div>

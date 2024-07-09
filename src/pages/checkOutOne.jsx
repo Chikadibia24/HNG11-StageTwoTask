@@ -41,7 +41,7 @@ const CheckOutOne = () => {
         </div>
       </div>
 
-      <div className="w-[100%] flex flex-col items-center">
+      <div className="w-[100%] flex flex-col items-center lg:px-[64px]">
         <Footer />
         <MobileBottomNavBar />
       </div>

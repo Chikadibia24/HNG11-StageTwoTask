@@ -106,7 +106,6 @@ const PaymentForm = ({onClick}) => {
     return (
       <div className="flex items-center gap-[6px]">
         <input
-          checked
           type="checkbox"
           name="saveDetails"
           id="saveDetails"
@@ -122,7 +121,7 @@ const PaymentForm = ({onClick}) => {
 
   const SubmitButton = () => {
     return (
-      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[20px] px-[10px] text-white text-[16px] rounded-[4px] w-[100%] lg:w-[80%]">
+      <button onClick={onClick} className="flex items-center justify-center self-center bg-black py-[20px] px-[10px] text-white text-[16px] rounded-[4px] w-[100%] lg:w-[89%]">
         Proceed to checkout
       </button>
     );
