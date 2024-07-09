@@ -27,9 +27,9 @@ const CartOne = () => {
 
   const Cart = () => {
     return (
-      <div className="flex flex-col gap-[8px] w-[94%] md:w-[96%] lg:w-[88%]">
+      <div className="flex flex-col gap-[8px] w-[94%] md:w-[96%] lg:w-[87%]">
         <div className="cart-sub-container-1">
-          <h1 className="text-[30px] pl-[1px]">Cart</h1>
+          <h1 className="text-[30px]">Cart</h1>
         </div>
 
         <div className="cart-sub-container-2 flex items-center justify-center flex-col gap-[40px] md:flex-row md:gap-[0px] border-[1px] border-[#4040407f] rounded-[8px] w-[100%] pt-[30px] md:pt-[initial] md:pl-[20px]">
@@ -90,7 +90,7 @@ const CartOne = () => {
             </div>
           </div>
 
-          <div className="subtotal flex flex-col items-center gap-[10px] border-t-[1px]  border-t-[#4040407f] md:border-t-[0px] md:pt-[initial] md:border-l-[1px] md:border-l-[#4040407f] w-[90%] md:w-[48%] lg:w-[32%] md:px-[20px] py-[45px] md:py-[10px]">
+          <div className="subtotal flex flex-col items-center gap-[10px] border-t-[1px]  border-t-[#4040407f] md:border-t-[0px] md:pt-[initial] md:border-l-[1px] md:border-l-[#4040407f] w-[90%] md:w-[48%] lg:w-[31%] md:px-[20px] py-[45px] md:py-[10px] lg:pt-[15px]">
             <div className="flex items-center justify-between w-[100%] text-[24px]">
               <p>Subtotal</p>
               <p>NGN 100,000</p>
