@@ -8,3 +8,8 @@ const GetProductData = ({ productsData }) => {
 };
 
 export default GetProductData;
+
+
+
+
+
