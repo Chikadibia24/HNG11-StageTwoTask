@@ -3,6 +3,8 @@ import imageTV from "../assets/imageTV.png";
 
 
 const CheckOutOnePriceDetails = () => {
+
+  
   return (
     <div className="hidden md:flex flex-col gap-[8px]">
       <div className="tv-image-description-container flex items-center md:gap-[10px] lg:gap-[0px] lg:justify-between">

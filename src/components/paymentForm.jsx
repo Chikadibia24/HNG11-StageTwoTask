@@ -186,8 +186,8 @@ const PaymentForm = ({onClick}) => {
         <Inputs
           label={"Phone number"}
           type={"number"}
-          id={"phoneNumber"}
-          name={"phoneNumber"}
+          id={"phone"}
+          name={"phone"}
           placeholder={"00000000"}
           divInputClass={"w-[100%]"}
           inputClassName={"w-[100%]"}
@@ -257,8 +257,8 @@ const PaymentForm = ({onClick}) => {
           <Inputs
             label={"Card holder's name*"}
             type={"text"}
-            id={"cardHolderName"}
-            name={"cardHolderName"}
+            id={"holder"}
+            name={"holder"}
             placeholder={"Casmir Daniyan"}
             divInputClass={"w-[100%]"}
             inputClassName={"w-[100%]"}
@@ -267,8 +267,8 @@ const PaymentForm = ({onClick}) => {
           <Inputs
             label={"Card number*"}
             type={"number"}
-            id={"cardNumber"}
-            name={"cardNumber"}
+            id={"cad-n"}
+            name={"cad-n"}
             placeholder={"00000000000"}
             divInputClass={"w-[100%]"}
             inputClassName={"w-[100%]"}
@@ -278,8 +278,8 @@ const PaymentForm = ({onClick}) => {
             <Inputs
               label={"Expiration date*"}
               type={"date"}
-              id={"expirationDate"}
-              name={"expirationDate"}
+              id={"exp-date"}
+              name={"exp-date"}
               placeholder={"01/25"}
               divInputClass={"w-[100%]"}
               inputClassName={"w-[100%]"}
@@ -288,8 +288,8 @@ const PaymentForm = ({onClick}) => {
             <Inputs
               label={"CVV*"}
               type={"number"}
-              id={"cvv"}
-              name={"cvv"}
+              id={"c-v-v"}
+              name={"c-v-v"}
               placeholder={"000"}
               divInputClass={"w-[100%]"}
               inputClassName={"w-[100%] "}

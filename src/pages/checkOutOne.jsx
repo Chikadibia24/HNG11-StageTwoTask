@@ -14,7 +14,8 @@ const CheckOutOne = () => {
 
   const navigate = useNavigate();
 
-  const goToCheckoutTwo = () => {
+  const goToCheckoutTwo = (e) => {
+    e.preventDefault();
     navigate("/checkouttwo");
   };
 

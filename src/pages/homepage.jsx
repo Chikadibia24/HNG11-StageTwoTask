@@ -12,13 +12,11 @@ import MobileBottomNavBar from "../components/MobileBottomNavBar";
 const HomePage = () => {
   const navigate = useNavigate();
 
-  const goToCart = () => {
+  const goToCart = (e) => {
+    e.preventDefault();
     navigate("/Cart");
   };
-
-  // const goToHomePage = () => {
-  //   navigate("/home");
-  // };
+  
 
   const FilterIcon = () => {
     return (

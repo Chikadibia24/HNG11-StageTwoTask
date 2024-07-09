@@ -11,7 +11,8 @@ import userIcon from "../assets/userIcon.svg";
 const SearchBar = ({ onClickCart }) => {
   const navigate = useNavigate();
   
-  const goToHomePage = () => {
+  const goToHomePage = (e) => {
+    e.preventDefault();
     navigate("/");
   };
 

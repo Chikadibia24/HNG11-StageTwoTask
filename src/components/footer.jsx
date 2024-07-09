@@ -10,8 +10,9 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
-  const goToHomePage = () => {
-    navigate("/home");
+  const goToHomePage = (e) => {
+    e.preventDefault();
+    navigate("/");
   };
 
 

@@ -7,6 +7,8 @@ import deliveryIcon from "../assets/deliveryIcon.svg";
 import infoIcon from "../assets/infoIcon.svg";
 
 const OrderSummary = () => {
+
+  
   const NeedHelp = ({ icon, text }) => {
     return (
       <div className="flex items-center gap-[6px]">

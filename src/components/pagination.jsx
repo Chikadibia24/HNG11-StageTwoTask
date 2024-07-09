@@ -4,6 +4,8 @@ import arrowRight from "../assets/arrowRight.svg";
 
 
 const Pagination = () => {
+
+  
   return (
     <div className="pagination-container flex items-center justify-between w-[89%]">
       <div className="previous flex items-center justify-start w-[25%] ">

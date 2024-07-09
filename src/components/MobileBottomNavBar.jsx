@@ -9,12 +9,14 @@ import { useNavigate } from "react-router-dom";
 const MobileBottomNavBar = () => {
   const navigate = useNavigate();
 
-  const goToCart = () => {
+  const goToCart = (e) => {
+    e.preventDefault();
     navigate("/Cart");
   };
 
 
-  const goToHomePage = () => {
+  const goToHomePage = (e) => {
+    e.preventDefault();
     navigate("/");
   };
 

@@ -13,11 +13,12 @@ import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
 const CartOne = () => {
   
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const goToCheckoutOne = () => {
-  navigate("/checkoutone");
-};
+  const goToCheckoutOne = (e) => {
+    e.preventDefault();
+    navigate("/checkoutone");
+  };
 
 
   const Cart = () => {

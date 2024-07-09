@@ -3,6 +3,8 @@ import imageTV from "../assets/imageTV.png";
 
 
 const OrderedTV = () => {
+
+  
   return (
     <div className="ordered-TV-container flex w-[100%] pt-[20px] px-[14px] md:px-[20px] gap-[10px] md:gap-[15px] lg:gap-[25px]">
       <div className="cart-image-container flex items-center justify-center w-[128px] h-[90px] md:w-[160px] md:h-[125px] lg:w-[300px] lg:h-[170px] rounded-[4px] ">

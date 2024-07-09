@@ -3,7 +3,10 @@ import favoriteIcon from "../assets/favoriteIcon.svg"
 
 
 const DisplayProductData = ({ products }) => {
+
   const { image, title, description, price, buttonText } = products;
+
+  
   return (
     <div className="productCards bg-white flex flex-col items-center gap-[10px] md:w-[370px] lg:w-[400px] p-[10px]">
       <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[3px] pb-[7px] rounded-[6px] w-[100%]">

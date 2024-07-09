@@ -12,12 +12,14 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
   
   const navigate = useNavigate();
 
-  const goToHomePage = () => {
-    navigate("/home");
+  const goToHomePage = (e) => {
+    e.preventDefault();
+    navigate("/");
   };
   
 
-  const goToCart = () => {
+  const goToCart = (e) => {
+    e.preventDefault();
     navigate("/cart");
   };
 
