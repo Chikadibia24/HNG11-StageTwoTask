@@ -12,7 +12,7 @@ const SearchBar = ({ onClickCart }) => {
   const navigate = useNavigate();
   
   const goToHomePage = () => {
-    navigate("/home");
+    navigate("/");
   };
 
 
