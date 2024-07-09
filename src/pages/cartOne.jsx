@@ -20,6 +20,10 @@ const CartOne = () => {
     navigate("/checkoutone");
   };
 
+  const goToHomePage = (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
 
   const Cart = () => {
     return (
@@ -118,7 +122,10 @@ const CartOne = () => {
               Proceed to checkout
             </button>
 
-            <button className="flex items-center justify-center h-[40px] text-[16px] border border-[#a9aaab] rounded-[4px] w-[100%]">
+            <button
+              onClick={goToHomePage}
+              className="flex items-center justify-center h-[40px] text-[16px] border border-[#a9aaab] rounded-[4px] w-[100%]"
+            >
               Continue shopping
             </button>
           </div>
