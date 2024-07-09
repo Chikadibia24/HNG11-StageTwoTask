@@ -86,17 +86,17 @@ const PaymentForm = ({onClick}) => {
   const PaymentButton = ({buttonClassName,icon,text,topIconClassName,topIcon}) => {
     return (
       <button
-        className={`flex items-center justify-center gap-[6px] md:gap-[8px] py-[17px] px-[6px] md:px-[10px] rounded-[4px] ${buttonClassName}`}
+        className={`flex items-center justify-center gap-[6px] md:gap-[8px] py-[15px] px-[6px] md:px-[10px] rounded-[4px] lg:h-[34px] lg:w-[119px] lg:px-[24px] lg:py-[16px] ${buttonClassName}`}
       >
         <span>
           <img src={icon} alt={icon} />
         </span>
 
-        <span className="text-[12px] md:text-[14px] lg:text-[16px] text-[#404040]">{text}</span>
+        <span className="text-[8px] md:text-[14px] lg:text-[16px] text-[#404040]">{text}</span>
         <div
-          className={`flex items-center justify-center h-[18px] w-[18px] lg:h-[20px] lg:w-[20px] rounded-full bg-black ${topIconClassName}`}
+          className={`flex items-center justify-center h-[18px] w-[18px] lg:h-[13px] lg:w-[50px] rounded-full bg-black ${topIconClassName}`}
         >
-          <img src={topIcon} alt={topIcon} className="w-[13px] lg:w-[initial]"/>
+          <img src={topIcon} alt={topIcon} className="w-[10px] h-[5px] lg:w-[initial]"/>
         </div>
       </button>
     );
@@ -201,7 +201,7 @@ const PaymentForm = ({onClick}) => {
         <div className="shipping-method-radio-buttons-container flex flex-col gap-[12px]">
           <ShippingMethod
             shippingMethodsClassName={
-              "background-rgba border-[1px] border-[#404040]"
+              "bg-[#ecececb2] border-[0.5px] border-[#404040]"
             }
             iconDivClassName={"bg-[white]"}
             icon={lighteningSpeedIcon}
@@ -212,7 +212,7 @@ const PaymentForm = ({onClick}) => {
           />
 
           <ShippingMethod
-            shippingMethodsClassName={"bg-[#ffffff] border border-[#a9aaab]"}
+            shippingMethodsClassName={"bg-[#ffffff] border border-[#4040407f]"}
             iconDivClassName={"bg-[#EEE]"}
             icon={deliveryIcon}
             h1Text={"Standard delivery (NGN 5,000)"}
@@ -229,17 +229,19 @@ const PaymentForm = ({onClick}) => {
         <div className="paymentOptionsButtons-container flex justify-between  gap-[50px] items-center my-[30px]">
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[15px] md:left-[30px] pl-[30px] pr-[5px] background-rgba border-[1px] border-[#404040]"
+              "absolute z-0 left-[15px] md:left-[23px] pl-[30px] pr-[5px] bg-[#ecececb2] border-[1px] border-[#404040] lg:left-[95px]"
             }
             icon={cardIcon}
             text={"Card"}
-            topIconClassName={"relative top-[-25px] left-[10px]"}
+            topIconClassName={
+              "relative top-[-25px] left-[15px] lg:top-[-16px] lg:left-[29px]"
+            }
             topIcon={tickGoodIcon}
           />
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[157px] md:left-[175px] lg:left-[190px] border border-[#a9aaab]"
+              "absolute z-0 left-[150px] md:left-[145px] lg:left-[238px] border border-[#404040] px-[18px] md:w-[151px] lg:w-[181px]"
             }
             icon={bankIcon}
             text={"Bank transfer"}
@@ -248,7 +250,7 @@ const PaymentForm = ({onClick}) => {
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[295px] md:left-[330px] lg:left-[365px] border border-[#a9aaab]"
+              "absolute z-0 left-[292px] md:left-[310px] lg:left-[444px] border border-[#404040] px-[18px] md:w-[145px] lg:w-[168px]"
             }
             icon={googlePayIcon}
             text={"Google pay"}

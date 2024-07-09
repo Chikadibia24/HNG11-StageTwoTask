@@ -7,12 +7,12 @@ const CheckOutOnePriceDetails = () => {
   
   return (
     <div className="hidden md:flex flex-col gap-[8px]">
-      <div className="tv-image-description-container flex items-center md:gap-[10px] lg:gap-[0px] lg:justify-between">
-        <div className="cart-image-container flex items-center justify-center md:w-[120px] md:h-[92px] lg:w-[220px] lg:h-[135px] ">
+      <div className="tv-image-description-container flex items-center md:gap-[10px] lg:gap-[5px] lg:justify-between">
+        <div className="cart-image-container flex items-center justify-center md:w-[120px] md:h-[92px] lg:w-[132px] lg:h-[105px] rounded-[4px]">
           <img
             src={imageTV}
             alt="imageTV"
-            className="md:w-[88px] md:h-[58px] lg:w-[180px] lg:h-[115px]"
+            className="md:w-[88px] md:h-[58px] lg:w-[119px] lg:h-[80px]"
           />
         </div>
 
