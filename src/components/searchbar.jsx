@@ -81,7 +81,13 @@ const SearchBar = ({ onClickCart }) => {
             src={shoppingCart}
             alt="shoppingCart"
             className="hover:cursor-pointer sm:w-[initial] md:w-[20px] lg:w-[initial]"
+            id="cart"
           />
+          <p
+            className="cart-item-1 flex items-center justify-center w-[16px] h-[16px] bg-black text-white text-[12px] rounded-full"
+          >
+            1
+          </p>
           <p className="hidden md:block text-[#404040] md:text-[14px] lg:text-[18px]">
             Cart
           </p>

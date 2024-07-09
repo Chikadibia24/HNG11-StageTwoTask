@@ -54,3 +54,8 @@ input:focus-visible {
   background: rgba(236, 236, 236, 0.70);
 }
 
+.cart-item-1{
+  position: relative;
+  top: -13px;
+  left: -10px;
+}
