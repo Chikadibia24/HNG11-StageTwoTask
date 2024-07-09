@@ -8,8 +8,8 @@ const DisplayProductData = ({ products }) => {
 
   
   return (
-    <div className="productCards bg-white flex flex-col items-center gap-[10px] md:w-[370px] lg:w-[400px] p-[10px] lg:px-[64px]">
-      <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[3px] pb-[7px] rounded-[6px] w-[100%]">
+    <div className="productCards bg-white flex flex-col items-center gap-[10px] w-[385px] md:w-[370px] lg:w-[400px] p-[10px] lg:px-[64px]">
+      <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[3px] pb-[7px] rounded-[6px] w-[100%] bg-[blue]">
         <img src={image} alt="imageTV" />
 
         <div className="self-end flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full">
