@@ -55,17 +55,17 @@ const CartOne = () => {
                   </p>
                 </div>
 
-                <div className="add-to-cart flex items-center justify-between  border-[1px] border-[#a9aaab] rounded-[4px] w-[80px] px-[10px] ">
+                <div className="add-to-cart flex items-center justify-between  border-[1px] border-[#404040] rounded-[4px] w-[80px] lg:w-[110px] lg:py-[4px] py-[2px] px-[10px] ">
                   <img
                     src={plusIcon}
                     alt="plusIcon"
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer lg:w-[22px] lg:h-[21px]"
                   />
-                  <p className="ONE text-[#404040] text-[16px]">1</p>
+                  <p className="ONE text-[#404040] text-[16px] lg:text-[18px] font-medium">1</p>
                   <img
                     src={minusIcon}
                     alt="minusIcon"
-                    className="hover:cursor-pointer"
+                    className="hover:cursor-pointer lg:w-[20px] lg:h-[21px]"
                   />
                 </div>
               </div>
@@ -74,7 +74,7 @@ const CartOne = () => {
                 <p className="text-[16px] md:text-[20px] lg:text-[24px] bg-white">
                   NGN 100,000
                 </p>
-                <button className="flex items-center justify-center self-end w-[30px] h-[30px] rounded-[5px] md:w-[initial] md:h-[24px] md:gap-[10px] lg:h-[30px] lg:gap-[14px] md:py-[10px] md:px-[8px] bg-[#FFE3E3] text-[#FF0000] border-[1px] border-[#FF0000] text-[16px] md:rounded-[8px]">
+                <button className="flex items-center justify-center self-end w-[30px] h-[30px] rounded-[5px] md:w-[initial] md:h-[24px] md:gap-[10px] lg:h-[30px] lg:w-[110px] lg:py-[18px] lg:gap-[14px] md:py-[10px] md:px-[8px] bg-[#FFE3E3] text-[#FF0000] border-[1px] border-[#FF0000] text-[16px] md:rounded-[8px]">
                   <span className="hidden md:block md-text-[12px] lg:text-[16px]">
                     Delete
                   </span>
