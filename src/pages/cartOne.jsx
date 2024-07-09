@@ -117,14 +117,14 @@ const CartOne = () => {
 
             <button
               onClick={goToCheckoutOne}
-              className="flex items-center justify-center h-[40px] bg-black text-[white] text-[16px] rounded-[4px] w-[100%]"
+              className="flex items-center justify-center h-[50px] bg-black text-[white] text-[16px] rounded-[4px] w-[100%]"
             >
               Proceed to checkout
             </button>
 
             <button
               onClick={goToHomePage}
-              className="flex items-center justify-center h-[40px] text-[16px] border border-[#a9aaab] rounded-[4px] w-[100%]"
+              className="flex items-center justify-center h-[50px] text-[16px] border border-[#a9aaab] rounded-[4px] w-[100%]"
             >
               Continue shopping
             </button>

@@ -28,14 +28,13 @@ const HomePage = () => {
 
   const FilterBar = ({ image, type, name, id, placeholder, className }) => {
     return (
-      <div className="flex items-center justify-center pl-[3px] md:pl-[1px] pr-[3px] lg:pr-[5px] gap-[2px] h-[fit-content] rounded-[4px] border border-[#a9aaab] w-[max-content]">
-        {/* <span>{text}</span> */}
+      <div className="flex items-center justify-center pl-[3px] md:pl-[1px] pr-[3px] lg:pr-[5px] gap-[2px] h-[38px] rounded-[4px] border border-[#a9aaab] w-[max-content]">
         <input
           type={type}
           name={name}
           id={id}
           placeholder={placeholder}
-          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] h-[30px] py-[6px] ${className}`}
+          className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] h-[36px] ${className}`}
         />
         <img src={image} alt={image} className="hover:cursor-pointer w-[10px] h-[7px] md:w-[11px] md:h-[8px] lg:w-[initial] lg:h-[initial]" />
       </div>
