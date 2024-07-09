@@ -50,7 +50,7 @@ const CheckOutTwo = () => {
         <CheckOutButton />
       </div>
 
-      <div>
+      <div className="flex items-center justify-center w-[100]">
         <Footer />
         <MobileBottomNavBar />
       </div>

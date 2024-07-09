@@ -132,9 +132,9 @@ const HomePage = () => {
       <div className="flex justify-center w-[100%]">
         <Pagination />
       </div>
-      <Footer />
 
       <div className="w-[100%] mt-[50px]">
+        <Footer />
         <MobileBottomNavBar />
       </div>
     </div>
