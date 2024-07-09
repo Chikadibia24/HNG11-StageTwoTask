@@ -11,7 +11,7 @@ const OrderSummary = () => {
   
   const NeedHelp = ({ icon, text }) => {
     return (
-      <div className="flex items-center gap-[6px]">
+      <div className="flex items-center gap-[6px] lg:gap-[12px]">
         <img
           src={icon}
           alt={icon}
@@ -47,7 +47,7 @@ const OrderSummary = () => {
   };
 
   return (
-    <div className="needHelp-summary-container flex justify-between px-[15px] md:px-[20px] w-[100%]">
+    <div className="needHelp-summary-container flex justify-between px-[15px] md:px-[20px] w-[100%] lg:px-[64px]">
       <div className="needHelp-container flex flex-col gap-[20px] w-[48%] md:w-[50%] lg:w-[70%]">
         <div className="need-help">
           <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">
@@ -64,7 +64,7 @@ const OrderSummary = () => {
         <NeedHelp icon={orderReturnIcon} text={"Return issues"} />
       </div>
 
-      <div className="summary-container flex flex-col gap-[8px] w-[52%] md:w-[40%] lg:w-[20%]">
+      <div className="summary-container flex flex-col gap-[8px] w-[52%] md:w-[40%] lg:w-[30%]">
         <div>
           <h1 className="text-[17px] md:text-[20px] lg:text-[24px] text-black">
             Summary

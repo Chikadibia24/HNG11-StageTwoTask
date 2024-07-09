@@ -5,9 +5,9 @@ const OrderIDBar = () => {
   
   
   return (
-    <div className="orderID-editButton-container flex justify-between px-[15px] md:px-[20px] pt-[20px]">
+    <div className="orderID-editButton-container flex justify-between px-[15px] md:px-[20px] pt-[20px] lg:px-[64px]">
       <div>
-        <h1 className="orderID text-black text-[20px] md:text-[28px] lg:text-[30px]">
+        <h1 className="orderID text-black text-[20px] md:text-[28px] lg:text-[36px]">
           Your Order ID: HTU4736529867SF
         </h1>
 
@@ -30,7 +30,7 @@ const OrderIDBar = () => {
       </div>
 
       <div>
-        <button className="edit-button flex items-center justify-center gap-[6px] bg-[#a9aaab] py-[7px] px-[7px] md:px-[8px] lg:px-[12px] rounded-[5px] md:rounded-[4px]">
+        <button className="edit-button flex items-center justify-center gap-[6px] bg-[#ecececb2] border-[#4040407f] border-[1px] py-[7px] px-[7px] md:px-[8px] lg:px-[12px] rounded-[5px] md:rounded-[4px]">
           <span>
             <img
               src={pencilEditIcon}
@@ -40,7 +40,7 @@ const OrderIDBar = () => {
           </span>
 
           <span className="hidden md:block md:text-[14px] lg:text-[18px] text-[#404040]">
-            Edit detail
+            Edit details
           </span>
         </button>
       </div>

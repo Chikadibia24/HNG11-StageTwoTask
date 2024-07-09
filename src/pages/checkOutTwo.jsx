@@ -42,7 +42,7 @@ const CheckOutTwo = () => {
     return (
       <button
         onClick={toggleShow}
-        className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] py-[20px] w-[94%] md:w-[60%] lg:w-[40%]"
+        className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] h-[50px] lg:h-[60px] py-[11px] w-[94%] md:w-[60%] lg:w-[37%]"
       >
         Pay now
       </button>
@@ -129,7 +129,7 @@ const CheckOutTwo = () => {
         <CheckOutButton />
       </div>
 
-      <div className="flex items-center justify-center w-[100]">
+      <div className="flex items-center justify-center w-[100] lg:px-[64px]">
         <Footer />
         <MobileBottomNavBar />
       </div>
