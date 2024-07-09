@@ -34,7 +34,7 @@ const PaymentForm = ({onClick}) => {
             type={type}
             id={id}
             name={name}
-            placeholder={placeholder}
+            value={placeholder}
             className={`${inputClassName} py-[8px] h-[45px] px-[6px] lg:px-[10px]`}
           />
           <img src={icon} alt={icon} className={`${imageClassName} w-[16px] lg:w-[initial] pr-[6px] lg:pr-[10px] hover:cursor-pointer`} />
@@ -106,6 +106,7 @@ const PaymentForm = ({onClick}) => {
     return (
       <div className="flex items-center gap-[6px]">
         <input
+          checked
           type="checkbox"
           name="saveDetails"
           id="saveDetails"
@@ -199,7 +200,9 @@ const PaymentForm = ({onClick}) => {
 
         <div className="shipping-method-radio-buttons-container flex flex-col gap-[12px]">
           <ShippingMethod
-            shippingMethodsClassName={"bg-[#a9aaab]"}
+            shippingMethodsClassName={
+              "background-rgba border-[1px] border-[#404040]"
+            }
             iconDivClassName={"bg-[white]"}
             icon={lighteningSpeedIcon}
             h1Text={"Swift delivery (NGN 12,000)"}
@@ -210,7 +213,7 @@ const PaymentForm = ({onClick}) => {
 
           <ShippingMethod
             shippingMethodsClassName={"bg-[#ffffff] border border-[#a9aaab]"}
-            iconDivClassName={"bg-[#a9aaab]"}
+            iconDivClassName={"bg-[#EEE]"}
             icon={deliveryIcon}
             h1Text={"Standard delivery (NGN 5,000)"}
             paraText={"We ship immediately take between 2 - 7 working days"}
@@ -226,7 +229,7 @@ const PaymentForm = ({onClick}) => {
         <div className="paymentOptionsButtons-container flex justify-between  gap-[50px] items-center my-[30px]">
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[15px] md:left-[30px] pl-[30px] pr-[5px] bg-[#a9aaab]"
+              "absolute z-0 left-[15px] md:left-[30px] pl-[30px] pr-[5px] background-rgba border-[1px] border-[#404040]"
             }
             icon={cardIcon}
             text={"Card"}

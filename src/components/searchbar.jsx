@@ -19,7 +19,7 @@ const SearchBar = ({ onClickCart }) => {
 
 
   return (
-    <div className="flex justify-between w-[95%] md:w-[97%] lg:w-[96%] h-[50px]">
+    <div className="flex justify-between w-[95%] md:w-[97%] lg:w-[100%] h-[50px] lg:px-[64px]">
       <button
         onClick={goToHomePage}
         className="flex items-center md:gap-[4px] lg:gap-[5px] px-[3px]"
@@ -48,7 +48,7 @@ const SearchBar = ({ onClickCart }) => {
             id="searchfield"
             name="searchfield"
             type="text"
-            placeholder="Smart Televisions"
+            value="Smart Televisions"
             className="pl-[6px] lg:pl-[initial] text-[14px] lg:text-[16px] text-[#404040] h-[43px] w-[249px] md:w-[220px] lg:w-[340px] border-[none]"
           />
 

@@ -27,7 +27,7 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
 
   return (
     <div
-      className={`flex items-center justify-between sticky top-0 z-10 px-[20px] w-[100%] h-[60px] ${className}`}
+      className={`flex items-center justify-between sticky top-0 z-10 px-[20px] lg:px-[64px] w-[100%] h-[60px] ${className}`}
     >
       <button onClick={goToHomePage} className="flex items-center gap-[8px]">
         <img src={logoIcon} alt="logo" className="md:w-[40px] lg:w-[45px]" />

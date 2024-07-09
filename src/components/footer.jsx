@@ -18,7 +18,7 @@ const Footer = () => {
 
   const BlackCircle = ({ image, altText }) => {
     return (
-      <div className="flex items-center justify-center bg-[#000] text-white w-[44px] h-[44px] rounded-full hover:cursor-pointer">
+      <div className="flex items-center justify-center bg-[#000] text-[#dbdbdbdb] w-[44px] h-[44px] rounded-full hover:cursor-pointer">
         <img src={image} alt={altText} />
       </div>
     );
@@ -39,7 +39,7 @@ const Footer = () => {
     }
 
   return (
-    <footer className="footer flex-col gap-[32px] hidden md:flex justify-center items-center h-[450px] w-[96%] bg-[#DBDBDB] p-[10px] rounded-[32px]">
+    <footer className="footer flex-col gap-[32px] hidden md:flex justify-center items-center h-[550px] w-[96%] bg-[#DBDBDB] lg:p-[32px] rounded-[32px]">
       <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
         <button
           onClick={goToHomePage}
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </button>
 
-        <div className="flex md:flex-col lg:flex-row lg:justify-around md:w-[74%] lg:w-[65%] gap-[15px] bg-[#606060] text-white pt-[20px] pb-[20px] rounded-[32px]">
+        <div className="flex md:flex-col lg:flex-row lg:justify-around md:w-[74%] lg:w-[65%] gap-[15px] bg-[#606060] text-white py-[32px] rounded-[32px]">
           <div className="flex flex-col gap-[8px] text-white md:pl-[20px] lg:pl-[0px]">
             <HeadingText h1Text={"Account"} />
             <div className="flex md:flex-row lg:flex-col md:gap-[10px] lg:gap-[15px]">
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-[96%] bg-[#606060] p-[10px] rounded-[32px]">
+      <div className="flex items-center justify-between w-[96%] bg-[#606060] h-[70px] p-[24px] rounded-[40px]">
         <div>
           <p className="text-white">© 2024, All rights reserved</p>
         </div>

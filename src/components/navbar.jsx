@@ -7,7 +7,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className="nav flex items-center justify-between md:justify-center w-[100%] bg-[#606060] h-[50px] pl-[13px] pr-[10px] md:pl-[30px] md:pr-[30px] sticky top-0 z-10">
+    <nav className="nav flex items-center justify-between md:justify-center w-[100%] bg-[#606060] h-[50px] pl-[13px] pr-[10px] md:pl-[30px] md:pr-[30px] sticky top-0 z-10 lg:px-[64px]">
       <div className="nav-sub-container w-[98%] md:w-[94%] flex items-center justify-between h-[50px]">
         <div className="nav-contact flex items-center justify-center md:gap-[8px] md:w-[197px] h-[50px] ">
           <img
@@ -25,7 +25,7 @@ const NavBar = () => {
             <p className="text-white text-[12px] md:text-[14px]">Get 50% Off Selected Items</p>
           </div>
 
-          <div className="vertical-line self-start m-0  border-l-[1px] border-l-[#ffffff] h-[40px]"></div>
+          <div className="vertical-line self-center m-0  border-l-[1px] border-l-[#ffffff] h-[40px]"></div>
 
           <div className="">
             <p className="text-[#D7FAFF] text-[12px] md:text-[14px]">Shop Now</p>
