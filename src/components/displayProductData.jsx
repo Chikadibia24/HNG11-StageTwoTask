@@ -8,7 +8,7 @@ const DisplayProductData = ({ products }) => {
 
   
   return (
-    <div className="productCards bg-white flex flex-col items-center gap-[10px] w-[380px] md:w-[370px] lg:w-[420px] p-[10px] lg:px-[64px]">
+    <div className="productCards bg-white flex flex-col items-center gap-[10px] w-[380px] md:w-[370px] lg:w-[410px] p-[10px] lg:px-[64px]">
       <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[8px] pb-[8px] rounded-[6px] w-[100%] bg-[blue]">
         <img src={image} alt="imageTV" />
 
