@@ -26,17 +26,21 @@ const HomePage = () => {
     );
   };
 
-  const FilterBar = ({ image, type, name, id, placeholder, className }) => {
+  const FilterBar = ({ image, type, name, id, placeholder, className, dropDownIconClassName }) => {
     return (
       <div className="flex items-center justify-center pl-[3px] md:pl-[1px] pr-[3px] lg:pr-[5px] gap-[2px] h-[38px] rounded-[4px] border border-[#a9aaab] w-[max-content]">
         <input
           type={type}
           name={name}
           id={id}
-          value={placeholder}
+          defaultValue={placeholder}
           className={`flex items-center text-[#404040] text-[10px] md:text-[12px] lg:text-[16px] pl-[2px] lg:pl-[3px] h-[36px] ${className}`}
         />
-        <img src={image} alt={image} className="hover:cursor-pointer w-[10px] h-[7px] md:w-[11px] md:h-[8px] lg:w-[initial] lg:h-[initial]" />
+        <img
+          src={image}
+          alt={image}
+          className={`${dropDownIconClassName} hover:cursor-pointer w-[10px] h-[7px] md:w-[11px] md:h-[8px] lg:w-[initial] lg:h-[initial]`}
+        />
       </div>
     );
   };
@@ -110,7 +114,8 @@ const HomePage = () => {
                 name={"date"}
                 id={"date"}
                 placeholder={"Release Date"}
-                className={"w-[120px] md:w-[130px] lg:w-[150px]"}
+                className={"w-[130px] md:w-[130px] lg:w-[150px]"}
+                dropDownIconClassName={"hidden md:block"}
               />
               <FilterBar
                 image={arrowDownGray}

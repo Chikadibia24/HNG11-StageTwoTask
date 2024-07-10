@@ -23,7 +23,10 @@ const PaymentForm = ({onClick}) => {
   const Inputs = ({label,type, id, name, placeholder, divInputClass, inputClassName, imageClassName,icon}) => {
     return (
       <div className="flex flex-col justify-center w-[100%]">
-        <label htmlFor={id} className="text-[14px] lg:text-[18px] text-[#404040]">
+        <label
+          htmlFor={id}
+          className="text-[14px] lg:text-[18px] text-[#404040]"
+        >
           {label}
         </label>
 
@@ -34,10 +37,14 @@ const PaymentForm = ({onClick}) => {
             type={type}
             id={id}
             name={name}
-            value={placeholder}
-            className={`${inputClassName} py-[8px] h-[45px] px-[6px] lg:px-[10px]`}
+            defaultValue={placeholder}
+            className={`${inputClassName} py-[8px] h-[45px] px-[10px] lg:px-[10px]`}
           />
-          <img src={icon} alt={icon} className={`${imageClassName} w-[16px] lg:w-[initial] pr-[6px] lg:pr-[10px] hover:cursor-pointer`} />
+          <img
+            src={icon}
+            alt={icon}
+            className={`${imageClassName} w-[16px] lg:w-[initial] pr-[6px] lg:pr-[10px] hover:cursor-pointer`}
+          />
         </div>
       </div>
     );

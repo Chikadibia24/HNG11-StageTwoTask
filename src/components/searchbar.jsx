@@ -48,7 +48,7 @@ const SearchBar = ({ onClickCart }) => {
             id="searchfield"
             name="searchfield"
             type="text"
-            value="Smart Televisions"
+            defaultValue="Smart Televisions"
             className="pl-[6px] lg:pl-[initial] text-[14px] lg:text-[16px] text-[#404040] h-[43px] w-[249px] md:w-[220px] lg:w-[340px] border-[none]"
           />
 
@@ -76,16 +76,17 @@ const SearchBar = ({ onClickCart }) => {
           </p>
         </div>
 
-        <button onClick={onClickCart} className="flex items-center justify-around gap-[0px]">
+        <button
+          onClick={onClickCart}
+          className="flex items-center justify-around gap-[0px]"
+        >
           <img
             src={shoppingCart}
             alt="shoppingCart"
             className="hover:cursor-pointer sm:w-[initial] md:w-[20px] lg:w-[initial]"
             id="cart"
           />
-          <p
-            className="cart-item-1 flex items-center justify-center w-[16px] h-[16px] bg-black text-white text-[12px] rounded-full"
-          >
+          <p className="cart-item-1 flex items-center justify-center w-[16px] h-[16px] bg-black text-white text-[12px] rounded-full">
             1
           </p>
           <p className="hidden md:block text-[#404040] md:text-[14px] lg:text-[18px]">
