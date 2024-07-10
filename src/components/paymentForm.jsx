@@ -233,7 +233,7 @@ const PaymentForm = ({onClick}) => {
             icon={cardIcon}
             text={"Card"}
             topIconClassName={
-              "relative top-[-23px] left-[10px] lg:top-[-20px] lg:left-[31px]"
+              "relative top-[-23px] md:top-[-26px] md:left-[16px] left-[10px] lg:top-[-20px] lg:left-[31px]"
             }
             topIcon={tickGoodIcon}
           />
