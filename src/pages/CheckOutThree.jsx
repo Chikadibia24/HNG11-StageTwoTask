@@ -43,7 +43,7 @@ const CheckOutThree = () => {
 
           <button
             onClick={goToHomePage}
-            className="flex items-center justify-center bg-[#a9aaab] px-[25px] py-[8px] text-[20px] rounded-[4px]"
+            className="flex items-center justify-center bg-[#ecececb2] border-[1px] border-[#404040] px-[28px] py-[11px] text-[18px] rounded-[6px]"
           >
             HOME
           </button>
