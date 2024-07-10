@@ -115,7 +115,7 @@ const HomePage = () => {
                 id={"date"}
                 placeholder={"Release Date"}
                 className={"w-[130px] md:w-[130px] lg:w-[150px]"}
-                dropDownIconClassName={"hidden md:block"}
+                dropDownIconClassName={"hidden ld:block"}
               />
               <FilterBar
                 image={arrowDownGray}
