@@ -42,7 +42,7 @@ const CheckOutTwo = () => {
     return (
       <button
         onClick={toggleShow}
-        className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] lg:rounded-[8px] py-[20px] w-[94%] md:w-[60%] lg:w-[40%]"
+        className="flex items-center justify-center bg-black text-white text-[16px] rounded-[4px] lg:rounded-[8px] py-[20px] w-[94%] md:w-[62%] lg:w-[40%]"
       >
         Pay now
       </button>
@@ -58,7 +58,7 @@ const CheckOutTwo = () => {
         className={`${show} paymentConfirmation-container flex items-center justify-center w-[100%] h-[100vh] fixed z-[10] bottom-[0]`}
       >
         <div
-          className={`confirm-payment flex flex-col gap-[10px] bg-white p-[35px] w-[450px] h-[250px] border rounded-[10px]`}
+          className={`confirm-payment flex flex-col gap-[10px] bg-white p-[35px] w-[95%] md:w-[450px] h-[250px] border rounded-[10px]`}
         >
           <div className="flex items-center justify-center flex-col gap-[10px]">
             <div className="flex items-center justify-center rounded-full">
@@ -125,11 +125,11 @@ const CheckOutTwo = () => {
         <PaymentConfirmation />
       </div>
 
-      <div className="flex items-center justify-center w-[100] pb-[200px]">
+      <div className="flex items-center justify-center w-[100] pb-[30px] md:pb-[150px] ">
         <CheckOutButton />
       </div>
 
-      <div className="flex items-center justify-center w-[100] lg:px-[64px]">
+      <div className="flex items-center justify-center w-[100] lg:px-[64px] ">
         <Footer />
         <MobileBottomNavBar />
       </div>

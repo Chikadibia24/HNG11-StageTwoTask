@@ -153,7 +153,7 @@ const CartOne = () => {
           <ProductData />
         </div>
 
-        <div className="flex justify-center w-100% mt-[50px]">
+        <div className="flex justify-center w-100% mt-[40px]">
           <MobileBottomNavBar />
         </div>
       </div>

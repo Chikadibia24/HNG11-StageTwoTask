@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <footer className="footer flex-col gap-[32px] hidden md:flex justify-center items-center h-[550px] w-[96%] lg:w-[100%] bg-[#DBDBDB] lg:p-[32px] rounded-[32px]">
-      <div className="flex items-center justify-between w-[96%] p-[10px] pr-[20px] pl-[20px]">
+      <div className="flex items-center justify-between w-[96%] p-[10px] px-[20px]">
         <button
           onClick={goToHomePage}
           className="flex items-center md:gap-[6px] lg:gap-[8px]"

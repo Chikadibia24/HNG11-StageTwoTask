@@ -136,7 +136,7 @@ const PaymentForm = ({onClick}) => {
 
 
   return (
-    <form className="flex flex-col gap-[20px] pb-[200px] w-[100%]">
+    <form className="flex flex-col gap-[20px] pb-[60px] md:pb-[140px] w-[100%]">
       <Headings
         h1Text={"Your details"}
         paraText={"Farchika54@gmail.com"}
