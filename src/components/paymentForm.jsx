@@ -86,7 +86,7 @@ const PaymentForm = ({onClick}) => {
   const PaymentButton = ({buttonClassName,icon,text,topIconClassName,topIcon}) => {
     return (
       <button
-        className={`flex items-center justify-center gap-[6px] md:gap-[8px] py-[15px] px-[6px] md:px-[10px] rounded-[4px] lg:h-[38px] lg:py-[16px] ${buttonClassName}`}
+        className={`flex items-center justify-center gap-[5px] md:gap-[8px] py-[15px] px-[6px] md:px-[10px] rounded-[4px] lg:h-[38px] lg:py-[16px] ${buttonClassName}`}
       >
         <span>
           <img src={icon} alt={icon} />
@@ -228,19 +228,19 @@ const PaymentForm = ({onClick}) => {
         <div className="paymentOptionsButtons-container flex justify-between  gap-[50px] items-center my-[30px]">
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[15px] md:left-[23px] pl-[30px] pr-[5px] bg-[#ecececb2] border-[1px] border-[#404040] lg:left-[66px] lg:w-[145px]"
+              "absolute z-0 left-[11px] md:left-[23px] pl-[30px] pr-[5px] bg-[#ecececb2] border-[1px] border-[#404040] lg:left-[66px] lg:w-[145px]"
             }
             icon={cardIcon}
             text={"Card"}
             topIconClassName={
-              "relative top-[-25px] left-[15px] lg:top-[-20px] lg:left-[31px]"
+              "relative top-[-23px] left-[10px] lg:top-[-20px] lg:left-[31px]"
             }
             topIcon={tickGoodIcon}
           />
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[150px] md:left-[145px] lg:left-[235px] border border-[#404040] px-[18px] md:w-[151px] lg:w-[181px]"
+              "absolute z-0 left-[126px] md:left-[145px] lg:left-[235px] border border-[#404040] px-[18px] md:w-[151px] lg:w-[181px]"
             }
             icon={bankIcon}
             text={"Bank transfer"}
@@ -249,7 +249,7 @@ const PaymentForm = ({onClick}) => {
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[292px] md:left-[310px] lg:left-[442px] border border-[#404040] px-[18px] md:w-[145px] lg:w-[168px]"
+              "absolute z-0 left-[246px] md:left-[310px] lg:left-[442px] border border-[#404040] px-[18px] md:w-[145px] lg:w-[168px]"
             }
             icon={googlePayIcon}
             text={"Google pay"}

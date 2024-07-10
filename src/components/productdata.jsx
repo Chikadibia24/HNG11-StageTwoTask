@@ -88,7 +88,7 @@ const ProductData = () => {
           Loading...
         </div>
       ) : (
-        <div className="flex flex-wrap items-center justify-center gap-[15px] w-[100%]">
+        <div className="flex flex-wrap items-center justify-center gap-[15px] lg:gap-[0] w-[100%]">
           <GetProductData productsData={products} />
         </div>
       )}
