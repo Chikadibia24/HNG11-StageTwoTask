@@ -1,23 +1,33 @@
+import { useNavigate } from "react-router-dom";
 import "../App.css"
 import favoriteIcon from "../assets/favoriteIcon.svg"
 
 
 const DisplayProductData = ({ products }) => {
 
+  const navigate = useNavigate();
+
+  const goToCart = (e) => {
+    e.preventDefault();
+    navigate("/Cart");
+  };
+
+
+
   const { image, title, description, price, buttonText } = products;
 
   
   return (
     <div className="productCards bg-white flex flex-col items-center gap-[10px] w-[380px] md:w-[370px] lg:w-[410px] p-[10px] lg:px-[64px]">
-      <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[8px] pb-[8px] rounded-[6px] w-[100%] bg-[blue]">
-        <img src={image} alt="imageTV" />
+      <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[8px] pb-[8px] rounded-[8px] w-[100%]">
+        <button onClick={goToCart}>
+          <img src={image} alt="imageTV" />
+        </button>
 
         <div className="self-end flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full">
-          <img
-            src={favoriteIcon}
-            alt="favoriteIcon"
-            className="hover:cursor-pointer"
-          />
+          <button>
+            <img src={favoriteIcon} alt="favoriteIcon" className="" />
+          </button>
         </div>
       </div>
 
