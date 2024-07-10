@@ -228,19 +228,19 @@ const PaymentForm = ({onClick}) => {
         <div className="paymentOptionsButtons-container flex justify-between  gap-[50px] items-center my-[30px]">
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[14px] md:left-[23px] pl-[30px] pr-[5px] bg-[#ecececb2] border-[1px] border-[#404040] lg:left-[66px] lg:w-[145px]"
+              "absolute z-0 left-[14px] md:left-[21px] pl-[30px] pr-[5px] bg-[#ecececb2] border-[1px] border-[#404040] lg:left-[66px] lg:w-[145px]"
             }
             icon={cardIcon}
             text={"Card"}
             topIconClassName={
-              "relative top-[-24px] md:top-[-26px] md:left-[16px] left-[17px] lg:top-[-20px] lg:left-[31px]"
+              "relative top-[-24px] md:top-[-26px] md:left-[22px] left-[17px] lg:top-[-20px] lg:left-[31px]"
             }
             topIcon={tickGoodIcon}
           />
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[145px] md:left-[15px] lg:left-[235px] border border-[#404040] px-[18px] md:w-[151px] lg:w-[181px]"
+              "absolute z-0 left-[145px] md:left-[150px] lg:left-[235px] border border-[#404040] px-[18px] md:w-[151px] lg:w-[181px]"
             }
             icon={bankIcon}
             text={"Bank transfer"}
@@ -249,7 +249,7 @@ const PaymentForm = ({onClick}) => {
 
           <PaymentButton
             buttonClassName={
-              "absolute z-0 left-[278px] md:left-[310px] lg:left-[442px] border border-[#404040] px-[18px] md:w-[145px] lg:w-[168px]"
+              "absolute z-0 left-[278px] md:left-[311px] lg:left-[442px] border border-[#404040] px-[18px] md:w-[145px] lg:w-[168px]"
             }
             icon={googlePayIcon}
             text={"Google pay"}
