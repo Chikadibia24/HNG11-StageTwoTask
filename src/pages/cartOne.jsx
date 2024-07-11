@@ -144,7 +144,7 @@ const CartOne = () => {
         <div className="flex flex-col items-center gap-[20px]">
           <Cart />
           <div className="flex items-center gap-[5px] self-start">
-            <h1 className="pl-[13px] lg:pl-[70px] text-[28px]">Similar Products</h1>
+            <h1 className="pl-[14px] lg:pl-[70px] text-[28px]">Similar Products</h1>
             <div className="flex items-center justify-center bg-[#EEE] w-[30px] h-[30px] rounded-full">
               <img src={arrowRight} alt="" className="hover:cursor-pointer" />
             </div>
