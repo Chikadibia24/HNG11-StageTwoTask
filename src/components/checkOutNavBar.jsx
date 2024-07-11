@@ -1,14 +1,14 @@
-// import logo from "../assets/logo.svg"; 
-// import favoriteIcon from "../assets/favoriteIcon.svg";
-// import shoppingCart from "../assets/shoppingCart.svg";
-// import arrowDownGray from "../assets/arrowDownGray.svg";
 import userIcon from "../assets/userIcon.svg"
-
 import { useNavigate } from "react-router-dom";
+import { useCount } from "../pages/CountContext";
 
 
 
 const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow, paraClassName }) => {
+
+
+  const { count } = useCount();
+
   
   const navigate = useNavigate();
 
@@ -33,11 +33,15 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
         <img src={logoIcon} alt="logo" className="md:w-[40px] lg:w-[45px]" />
 
         <div className="hidden md:flex flex-col items-start">
-          <p className={`${paraClassName} mb-[-5px] md:text-[20px] lg:text-[24px]`}>
+          <p
+            className={`${paraClassName} mb-[-5px] md:text-[20px] lg:text-[24px]`}
+          >
             Danchika
           </p>
 
-          <p className={`${paraClassName} mt-[-5px] md:text-[20px] lg:text-[24px]`}>
+          <p
+            className={`${paraClassName} mt-[-5px] md:text-[20px] lg:text-[24px]`}
+          >
             Electronics
           </p>
         </div>
@@ -61,7 +65,12 @@ const CheckOutNavBar = ({ className, logoIcon, iconFavorite, cartIcon, downArrow
             alt="shoppingCart"
             className="hover:cursor-pointer w-[35px] md:w-[19px] lg:w-[27px]"
           />
-          <p className={`${paraClassName} hidden md:block md:text-[16px] lg:text-[18px]`}>
+          <p className="cart-item-2 flex items-center justify-center w-[16px] h-[16px] bg-black text-white text-[12px] rounded-full">
+            {count}
+          </p>
+          <p
+            className={`${paraClassName} hidden md:block md:text-[16px] lg:text-[18px]`}
+          >
             Cart
           </p>
         </button>
