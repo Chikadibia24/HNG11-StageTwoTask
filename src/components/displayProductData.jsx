@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import "../App.css"
 import favoriteIcon from "../assets/favoriteIcon.svg"
+import { useCount } from "../pages/CountContext";
+
 
 
 const DisplayProductData = ({ products }) => {
+
+      const { incrementCount } = useCount();
+
 
   const navigate = useNavigate();
 
@@ -39,7 +44,10 @@ const DisplayProductData = ({ products }) => {
       <div className="flex items-center justify-between w-[100%]">
         <p className="text-[20px]">{price}</p>
 
-        <button className="text-[18px] text-[#404040] border-b-[1px] border-b-[#404040] hover:border-b-[#000] hover:border-b-[2px]">
+        <button
+          onClick={incrementCount}
+          className="text-[18px] text-[#404040] border-b-[1px] border-b-[#404040] hover:border-b-[#000] hover:border-b-[2px]"
+        >
           {buttonText}
         </button>
       </div>

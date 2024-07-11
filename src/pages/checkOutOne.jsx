@@ -9,6 +9,8 @@ import CheckOutOnePriceDetails from "../components/checkOutOnePriceDetails";
 import Footer from "../components/footer";
 import MobileBottomNavBar from "../components/MobileBottomNavBar";
 
+
+
 const CheckOutOne = () => {
 
 

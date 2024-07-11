@@ -7,8 +7,15 @@ import shoppingCart from "../assets/shoppingCart.svg";
 import arrowDownGray from "../assets/arrowDownGray.svg";
 import { useNavigate } from "react-router-dom";
 import userIcon from "../assets/userIcon.svg";
+import { useCount } from "../pages/CountContext";
+
+
 
 const SearchBar = ({ onClickCart }) => {
+  
+  const { count } = useCount();
+
+
   const navigate = useNavigate();
   
   const goToHomePage = (e) => {
@@ -87,7 +94,7 @@ const SearchBar = ({ onClickCart }) => {
             id="cart"
           />
           <p className="cart-item-1 flex items-center justify-center w-[16px] h-[16px] bg-black text-white text-[12px] rounded-full">
-            1
+            {count}
           </p>
           <p className="hidden md:block text-[#404040] md:text-[14px] lg:text-[18px]">
             Cart

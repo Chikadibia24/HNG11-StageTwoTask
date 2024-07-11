@@ -10,9 +10,30 @@ import plusIcon from "../assets/plusIcon.svg";
 import minusIcon from "../assets/minusIcon.svg";
 import infoIcon from "../assets/infoIcon.svg";
 import MobileBottomNavBar from "../components/MobileBottomNavBar";
+// import { useState } from "react";
+import { useCount } from "./CountContext";
+
+
 
 const CartOne = () => {
+
+  // const [count, setCount] = useState(1);
+
+  // const incrementCount = () => {
+  //   setCount((prev) => prev + 1);
+  // };
+
+  // const decrementCount = () => {
+  //   setCount((prev) => (prev > 0 ? prev - 1 : prev));
+  // };
   
+
+
+    const { count, incrementCount, decrementCount } = useCount();
+
+
+
+
   const navigate = useNavigate();
 
   const goToCheckoutOne = (e) => {
@@ -56,17 +77,25 @@ const CartOne = () => {
                 </div>
 
                 <div className="add-to-cart flex items-center justify-between  border-[1px] border-[#404040] rounded-[4px] w-[80px] lg:w-[110px] lg:py-[4px] py-[2px] px-[10px] ">
-                  <img
-                    src={plusIcon}
-                    alt="plusIcon"
-                    className="hover:cursor-pointer lg:w-[22px] lg:h-[21px]"
-                  />
-                  <p className="ONE text-[#404040] text-[16px] lg:text-[18px] font-medium">1</p>
-                  <img
-                    src={minusIcon}
-                    alt="minusIcon"
-                    className="hover:cursor-pointer lg:w-[20px] lg:h-[21px]"
-                  />
+                  <button onClick={incrementCount}>
+                    <img
+                      src={plusIcon}
+                      alt="plusIcon"
+                      className=" lg:w-[22px] lg:h-[21px]"
+                    />
+                  </button>
+
+                  <p className="ONE text-[#404040] text-[16px] lg:text-[18px] font-medium">
+                    {count}
+                  </p>
+
+                  <button onClick={decrementCount}>
+                    <img
+                      src={minusIcon}
+                      alt="minusIcon"
+                      className=" lg:w-[20px] lg:h-[21px]"
+                    />
+                  </button>
                 </div>
               </div>
 
