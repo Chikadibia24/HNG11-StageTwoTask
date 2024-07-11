@@ -19,7 +19,7 @@ const SearchBar = ({ onClickCart }) => {
 
 
   return (
-    <div className="flex justify-between w-[94%] md:w-[97%] lg:w-[100%] h-[50px] lg:px-[64px]">
+    <div className="flex justify-between w-[94%] md:w-[96%] lg:w-[100%] h-[50px] lg:px-[64px]">
       <button
         onClick={goToHomePage}
         className="flex items-center md:gap-[4px] lg:gap-[5px] px-[3px]"

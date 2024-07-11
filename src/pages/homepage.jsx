@@ -63,7 +63,7 @@ const HomePage = () => {
                 name={"category"}
                 id={"category"}
                 placeholder={"Category"}
-                className={"w-[44px] md:w-[55px] lg:w-[75px]"}
+                className={"w-[44px] md:w-[51px] lg:w-[75px]"}
               />
               <FilterBar
                 image={arrowDownGray}
@@ -71,7 +71,7 @@ const HomePage = () => {
                 name={"brand"}
                 id={"brand"}
                 placeholder={"Brand"}
-                className={"w-[30px] md:w-[38px] lg:w-[60px]"}
+                className={"w-[30px] md:w-[36px] lg:w-[60px]"}
               />
               <FilterBar
                 image={arrowDownGray}
@@ -79,7 +79,7 @@ const HomePage = () => {
                 name={"features"}
                 id={"features"}
                 placeholder={"Features"}
-                className={"w-[44px] md:w-[55px] lg:w-[73px]"}
+                className={"w-[44px] md:w-[51px] lg:w-[73px]"}
               />
               <FilterBar
                 image={arrowDownGray}
@@ -87,7 +87,7 @@ const HomePage = () => {
                 name={"color"}
                 id={"color"}
                 placeholder={"Color"}
-                className={"w-[27px] md:w-[34px] lg:w-[60px]"}
+                className={"w-[27px] md:w-[32px] lg:w-[60px]"}
               />
               <FilterBar
                 image={arrowDownGray}
@@ -95,7 +95,7 @@ const HomePage = () => {
                 name={"inches"}
                 id={"inches"}
                 placeholder={"Inches"}
-                className={"w-[33px] md:w-[41px] lg:w-[60px]"}
+                className={"w-[33px] md:w-[40px] lg:w-[60px]"}
               />
             </div>
 
@@ -106,7 +106,7 @@ const HomePage = () => {
                 name={"price"}
                 id={"price"}
                 placeholder={"Price"}
-                className={"w-[27px] md:w-[34px] lg:w-[60px]"}
+                className={"w-[27px] md:w-[32px] lg:w-[60px]"}
               />
               <FilterBar
                 image={arrowDownGray}
@@ -114,7 +114,7 @@ const HomePage = () => {
                 name={"date"}
                 id={"date"}
                 placeholder={"Release Date"}
-                className={"w-[130px] md:w-[130px] lg:w-[150px]"}
+                className={"w-[130px] md:w-[125px] lg:w-[150px]"}
                 dropDownIconClassName={"hidden ld:block"}
               />
               <FilterBar
@@ -123,14 +123,17 @@ const HomePage = () => {
                 name={"discount-and-deals"}
                 id={"discount-and-deals"}
                 placeholder={"Discount and Deals"}
-                className={"w-[89px] md:w-[117px] lg:w-[150px]"}
+                className={"w-[89px] md:w-[112px] lg:w-[150px]"}
               />
             </div>
           </div>
         </div>
       </div>
 
-      <ProductData />
+      <div className="flex justify-center w-[100%] p-[10px] lg:px-[64px]">
+        <ProductData />
+      </div>
+
       <div className="flex justify-center w-[100%]">
         <Pagination />
       </div>
