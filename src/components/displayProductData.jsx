@@ -23,7 +23,10 @@ const DisplayProductData = ({ products }) => {
 
   
   return (
-    <div className="productCards bg-white flex flex-col items-center gap-[10px] w-[380px] md:w-[350px] lg:w-[350px]">
+    <div
+      className="productCards bg-white flex flex-col items-center gap-[10px] w-[380px] md:w-[350px] lg:w-[350px] hover:border-[1px] border-[#4040407f
+] rounded-[8px] px-[6px] py-[10px]"
+    >
       <div className="tv-container flex flex-col items-center pl-[10px] pt-[20px] pr-[8px] pb-[8px] rounded-[8px] w-[100%]">
         <button onClick={goToCart}>
           <img src={image} alt="imageTV" />
