@@ -150,7 +150,7 @@ const CartOne = () => {
             </div>
           </div>
 
-          <div className="flex justify-center w-[100%] p-[10px] lg:px-[64px]">
+          <div className="flex justify-center w-[100%] px-[0] py-[10px] lg:px-[64px]">
             <ProductData />
           </div>
         </div>

@@ -55,7 +55,7 @@ const HomePage = () => {
         <div className="flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-[10px] md:gap-[9px] lg:gap-[15px]">
           <FilterIcon />
 
-          <div className="both-filters-wrapper flex flex-col gap-[15px] md:gap-[9px] md:flex-row">
+          <div className="both-filters-wrapper flex flex-col gap-[15px] md:gap-[9px] md:flex-row lg:gap-[15px]">
             <div className="first-filter-row-wrapper flex items-center gap-[9px] md:gap-[9px] lg:gap-[15px]">
               <FilterBar
                 image={arrowDownGray}
